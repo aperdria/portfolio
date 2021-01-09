@@ -1,0 +1,131 @@
+:root {
+    --main-font-size: 16px;
+    --border-radius: 10px;
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    --default-margin-x: 32px;
+    --default-margin-y: 16px;
+
+    --accent-color: #E15151;
+    --background-color: #FDFDFD;
+    --white: #FFF;
+    --light-grey: #ccc;
+    --dark-grey: #666;
+    --black: #000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--main-font-size);
+    background-color: var(--background-color);
+}
+
+main {
+    display: flex;
+    margin-left: 50px;
+    margin-left: 100px;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-bottom: 8px;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'PT Mono', serif;
+    font-size: 16px;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+p .small {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* MENU */
+
+@media screen and (min-width: 600px) {
+    #menu-mobile {
+        visibility: hidden;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #menu-desktop {
+        visibility: hidden;
+    }
+}
+
+#menu-desktop {
+    width: 250px;
+    text-align: right;
+    position: fixed;
+    padding: var(--default-margin-x);
+}
+
+#menu-desktop li {
+    list-style: none;
+    margin-top: var(--default-margin-x);
+    margin-bottom: var(--default-margin-x);
+}
+
+#menu-desktop li .menu-item {
+    font-family: 'PT Mono', serif;
+    text-decoration: none;
+    color: var(--black);
+}
+
+#menu-desktop li .menu-item.active {
+    color: var(--accent-color);
+}
+
+#menu-desktop li .menu-item:hover {
+    color: var(--dark-grey);
+}
+
+#introduction {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    line-height: 24px;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    margin-left: 300px;
+    margin-right: 100px;
+    padding-left: var(--default-margin-x);
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    height: 100vh;
+}
