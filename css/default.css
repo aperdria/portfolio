@@ -1,0 +1,29 @@
+:root {
+    font-size: 16px;
+}
+
+:root {
+    --font-size-default: 1rem;
+    --font-size-small: 0.75rem;
+    --font-size-large: 1.5rem;
+    --font-size-extra-large: 2.25rem;
+
+    --border-radius: 10px;
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    --default-margin-x: 32px;
+    --default-margin-y: 16px;
+    --large-margin-x: 100px;
+    --large-margin-y: 100px;
+    --extra-large-margin-x: 20vw;
+    --extra-large-margin-y: 10vh;
+
+    --primary-color: #DBA293;
+    --secondary-color: #E8C3B9;
+    --tertiary-color: #F7DBDB;
+    --background-color: #FDFDFD;
+    --white: #FFF;
+    --light-grey: #ccc;
+    --dark-grey: #666;
+    --black: #000;
+}

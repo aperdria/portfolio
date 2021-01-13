@@ -4,34 +4,43 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="././css/default.css" />
+        <link rel="stylesheet" href="././css/tablet.css" />
+        <link rel="stylesheet" href="././css/mobile.css" />
+        <link rel="stylesheet" href="././css/style.css" />
         <title>Amélie Perdriaud - Portfolio</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"
             rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
-    </head>
+        <script src="https://kit.fontawesome.com/15d8602e1a.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="js/anime.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700"
+            rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 
     <body>
         <header>
             <nav id="menu-mobile">
-                <a href="#home">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="#resume">Resume</a>
-                <a href="#about">About me</a>
-                <a href="#contact">Get in touch</a>
+                <a class="menu-item active" href="#home">Home</a>
+                <a class="menu-item" href="#projects">Projects</a>
+                <a class="menu-item" href="#resume">Resume</a>
+                <a class="menu-item" href="#about">About me</a>
+                <a class="menu-item" href="#contact">Get in touch</a>
             </nav>
         </header>
+        <div class="morph-wrap">
+            <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
+                <path
+                    d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z" />
+            </svg>
+        </div>
 
         <main>
             <div id="menu-desktop">
-                <h1>Amélie Perdriaud</h1>
+                <div class="logo">Amélie Perdriaud</div>
                 <h2>UX Designer & Developer</h2>
-                <p id="introduction" class="small">
-                    After working 5 years as a full-stack developer, I graduated from a
-                    UX/UI Design Bootcamp, where I learned everything I needed to bring more
-                    creativity into my job, and more satisfaction into customers' life.
-                </p>
                 <nav id="menu">
                     <ul>
                         <li><a class="menu-item active" href="#home">Home</a></li>
@@ -40,45 +49,94 @@
                         <li><a class="menu-item" href="#about">About me</a></li>
                         <li><a class="menu-item" href="#contact">Get in touch</a></li>
                     </ul>
+                    <a class="icon-social" href="https://www.linkedin.com/in/amelieperdriaud/"
+                        target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="icon-social" href="https://www.instagram.com/belleechappee"
+                        target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </nav>
             </div>
-            <div class="container">
-                <section id="home">
-                    <h3>Home</h3>
-                </section>
-                <section id="projects">
-                    <h3>Projects</h3>
-                </section>
-                <section id="resume">
-                    <h3>Resume</h3>
-                </section>
-                <section id="about">
-                    <h3>About me</h3>
-                </section>
-                <section id="contact">
-                    <h3>Contact</h3>
+            <div class="scroll-line-vertical"></div>
+            <div class="container" id="container">
+                <div class="content-wrap" id="home">
+                    <div class="content content--layout content--layout-1">
+                        <p class="headline content__title">hey there, I'm Amélie</p>
+                        <p class="ml11 sub-headline">
+                            I am
+                            <span class="text-wrapper">
+                                <span class="line line1"></span>
+                                <span class="letters">UX Designer</span>
+                                &
+                                <span class="letters">Developer</span>
+                            </span>
+                        </p>
+                        <div id="introduction">
+                            <div id="introduction-picture">
+                                <img class="content__img" src="img/amelie_perdriaud.jpg">
+                            </div>
+                            <div id="introduction-text" <p>
+                                After working 5 years as a full-stack developer, I graduated
+                                from a
+                                UX/UI Design Bootcamp, where I learned everything I needed to
+                                bring more
+                                creativity into my job, and more satisfaction into customers'
+                                life.
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#projects"><i
+                                class="icon-cta far fa-arrow-alt-circle-down fa-5x"></i></a>
+                    </div>
+                </div>
+                <div class="content-wrap" id="projects">
+                    <div class="content content--layout content--layout-1">
+                        <img class="content__img" src=""/>
+                        <h3 class="content__title">Projects list</h3>
+                    </div>
+                </div>
+                <div class="content-wrap" id="resume">
+                    <div class="content content--layout content--layout-2">
+                        <img class="content__img" src=""/>
+                        <h3 class="content__title">Resume</h3>
+                        <div class="resume-choices">
+                            <div class="choice">
+
+                                <a class="icon-social"
+                                    href="https://www.linkedin.com/in/amelieperdriaud/"
+                                    target="_blank"><i class="fa fa-linkedin fa-5x"
+                                        aria-hidden="true"></i></a>
+                            </div>
+                            <div class="choice">
+                                B
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-wrap" id="about">
+                    <div class="content content--layout content--layout-3">
+                        <img class="content__img"/>
+                        <h3 class="content__title">About me</h3>
+                    </div>
+                </div>
+                <div class="content-wrap" id="contact">
+                    <div class="content content--layout content--layout-4">
+                        <img class="content__img"/>
+                        <h3 class="content__title">Contact</h3>
+                    </div>
+                </div>
+                <!-- Related demos -->
+                <section class="content content--related">
+                    <p class="content__info">Credits</p>
                 </section>
             </div>
 
         </main>
 
-        <script>
-            var anchor = window.location.hash.substr(1);
-            document.addEventListener('scroll', function (event) {
-                var list = document.getElementsByClassName("menu-item");
-                for (let item of list) {
-                    if (item.getAttribute("href") == window.location.hash) {
-                        item.className = "menu-item active";
-                    } else {
-                        item.className = "menu-item";
-                    }
-                }
-            }, true);
-
-            function scrollTo(hash) {
-                location.hash = "#" + hash;
-            }
-        </script>
+        <script src="js/animate-letters.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/anime.min.js"></script>
+        <script src="js/scrollMonitor.js"></script>
+        <script src="js/scroll.js"></script>
+        <script src="js/morphing-background.js"></script>
 
     </body>
 
