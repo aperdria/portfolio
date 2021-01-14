@@ -4,6 +4,7 @@
 
 :root {
     --font-size-default: 1rem;
+
     --font-size-small: 0.75rem;
     --font-size-medium: 1.25rem;
     --font-size-large: 1.5rem;
@@ -12,12 +13,17 @@
     --border-radius: 10px;
     --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-    --default-margin-x: 32px;
-    --default-margin-y: 16px;
-    --large-margin-x: 100px;
-    --large-margin-y: 100px;
-    --extra-large-margin-x: 20vw;
-    --extra-large-margin-y: 10vh;
+    --margin-default-x: 32px;
+    --margin-default-y: 16px;
+
+    --margin-small-x: 8px;
+    --margin-small-y: 8px;
+    --margin-medium-x: 64px;
+    --margin-medium-y: 32px;
+    --margin-large-x: 100px;
+    --margin-large-y: 100px;
+    --margin-extra-large-x: 20vw;
+    --margin-extra-large-y: 10vh;
 
     --progress-bar-position: var(--extra-large-margin);
 
@@ -27,6 +33,6 @@
     --background-color: #FDFDFD;
     --white: #FFF;
     --light-grey: #ccc;
-    --dark-grey: #666;
+    --dark-grey: #333;
     --black: #000;
 }

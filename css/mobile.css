@@ -18,12 +18,12 @@
         --border-radius: 10px;
         --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-        --default-margin-x: 16px;
-        --default-margin-y: 8px;
-        --large-margin-x: 16px;
-        --large-margin-y: 100px;
-        --extra-large-margin-x: 16px;
-        --extra-large-margin-y: 100px;
+        --margin-default-x: 16px;
+        --margin-default-y: 8px;
+        --margin-large-x: 16px;
+        --margin-large-y: 100px;
+        --margin-extra-large-x: 16px;
+        --margin-extra-large-y: 100px;
     }
 
     main {
@@ -32,14 +32,14 @@
     }
 
     .container {
-        margin-left: var(--default-margin-x);
-        margin-right: var(--default-margin-x);
-        padding-left: var(--default-margin-x);
-        padding-right: var(--default-margin-x);
+        margin-left: var(--margin-default-x);
+        margin-right: var(--margin-default-x);
+        padding-left: var(--margin-default-x);
+        padding-right: var(--margin-default-x);
     }
 
     .scroll-line-vertical {
-        margin-left: var(--default-margin-x);
+        margin-left: var(--margin-default-x);
     }
 
     .introduction {
@@ -63,8 +63,8 @@
         display: flex;
         align-content: space-between;
         justify-content: center;
-        padding-top: var(--default-margin-y);
-        padding-bottom: var(--default-margin-y);
+        padding-top: var(--margin-default-y);
+        padding-bottom: var(--margin-default-y);
     }
 
     #menu-mobile .menu-item {

@@ -4,5 +4,5 @@
     --tertiary-color: #FDEFCC;
     --background-color: #FDFDFD;
 
-    --progress-bar-position: var(--default-margin-x);
+    --progress-bar-position: var(--margin-default-x);
 }

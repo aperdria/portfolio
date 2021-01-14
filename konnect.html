@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-    <p>
+    <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="././css/default.css" />
@@ -20,283 +20,281 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700"
             rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    </head>
 
-        <body>
-            <div class="overlay open"></div>
-            <div class="scroll-line-vertical"></div>
-            <main>
+    <body>
+        <div class="overlay open"></div>
+        <div class="scroll-line-vertical"></div>
+        <main>
+            <div class="icon-back">
                 <a href="./index.html"><i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i></a>
-                <div id="use-case">
-                    <div class="introduction">
-                        <div class="blobs">
-                            <svg id="blob1">
-                                <path
-                                    d="M355.259 0.582402C416.969 -5.62912 469.741 39.1431 521.687 73.03C576.577 108.838 635.851 142.566 663.788 201.85C693.808 265.553 707.198 342.731 679.241 407.365C652.062 470.202 583.236 501.333 521.474 530.873C469.329 555.813 412.48 554.138 355.259 562.32C285.617 572.277 215.032 611.947 150.508 583.913C81.7876 554.055 33.9932 485.242 12.589 413.438C-8.53854 342.562 -4.48164 260.41 35.535 198.213C72.4179 140.887 153.532 140.092 211.515 104.251C263.027 72.4102 295.006 6.64729 355.259 0.582402Z" />
-                            </svg>
-                            <svg id="blob2">
-                                <path
-                                    d="M323.588 19.3705C375.197 25.2498 428.186 20.7357 473.105 46.8208C521.279 74.797 564.976 115.617 581.131 168.932C597.146 221.784 566.167 274.27 558.601 328.974C548.772 400.045 583.196 488.632 530.224 537.024C478.068 584.671 393.161 555.918 323.588 543.669C264.731 533.307 213.861 505.184 163.819 472.516C110.909 437.977 52.6795 406.568 25.8988 349.338C-2.73954 288.139 -8.89108 215.601 13.8152 151.962C36.2003 89.2227 85.8478 35.8934 147.087 9.68117C202.614 -14.0862 263.576 12.534 323.588 19.3705Z" />
-                            </svg>
-                        </div>
-                        <h1 class="ml16">Konnect</h1>
-                        <p class="headline">
-                            <b>Have you ever moved to a new place? How easy was it for you to
-                                meet people and make friends? Challenging right?</b>
-                        </p>
-                        <p class="headline">Friendship needs time to grow. But as we grow up, it is
-                            more and more difficult to find the time and energy to develop close
-                            friendship. Taking care of our family, managing our career goals,
-                            spending time without partner... We have a busy life.
-                        </p>
-                        <p class="headline">I've been living in Amsterdam for 2 years now (and
-                            loving it!), but developing close friendship is challenging for me
-                            (COVID
-                            doesn't help). So I decided to deep dive into this assumption and see if
-                            other people felt the same.
-                        </p>
+            </div>
+            <div id="use-case">
+                <div class="introduction">
+                    <div class="blobs">
+                        <svg id="blob1">
+                            <path
+                                d="M355.259 0.582402C416.969 -5.62912 469.741 39.1431 521.687 73.03C576.577 108.838 635.851 142.566 663.788 201.85C693.808 265.553 707.198 342.731 679.241 407.365C652.062 470.202 583.236 501.333 521.474 530.873C469.329 555.813 412.48 554.138 355.259 562.32C285.617 572.277 215.032 611.947 150.508 583.913C81.7876 554.055 33.9932 485.242 12.589 413.438C-8.53854 342.562 -4.48164 260.41 35.535 198.213C72.4179 140.887 153.532 140.092 211.515 104.251C263.027 72.4102 295.006 6.64729 355.259 0.582402Z" />
+                        </svg>
+                        <svg id="blob2">
+                            <path
+                                d="M323.588 19.3705C375.197 25.2498 428.186 20.7357 473.105 46.8208C521.279 74.797 564.976 115.617 581.131 168.932C597.146 221.784 566.167 274.27 558.601 328.974C548.772 400.045 583.196 488.632 530.224 537.024C478.068 584.671 393.161 555.918 323.588 543.669C264.731 533.307 213.861 505.184 163.819 472.516C110.909 437.977 52.6795 406.568 25.8988 349.338C-2.73954 288.139 -8.89108 215.601 13.8152 151.962C36.2003 89.2227 85.8478 35.8934 147.087 9.68117C202.614 -14.0862 263.576 12.534 323.588 19.3705Z" />
+                        </svg>
                     </div>
-                    <div class="col-2">
-                        <div class="col">
-                            <h2>Project setup</h2>
-                            <ul class="list">
-                                <li><span class="key">Team</span> <span class="value">Me, myself and
-                                        I</span></li>
-                                <li><span class="key">Timeline</span> <span class="value">Evenings
-                                        and
-                                        weekends during 4 weeks</span></li>
-                                <li><span class="key">Context</span> <span class="value">Final
-                                        project
-                                        at Ironhack UX/UI Design Bootcamp</span></li>
-                                <li><span class="key">Process</span> <span class="value">Design
-                                        thinking, from user
-                                        research to high-fi prototype</span></li>
-                                <li><span class="key">Tools</span> <span class="value">Figma,
-                                        Whimsical, Maze</span></li>
-                                <li><span class="key">Achievement</span> <span class="value">Won the
-                                        prize of the best project of the bootcamp on 18
-                                        projects</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <img src="./img/konnect/mockup-perspective.png" />
-                        </div>
+                    <h1 class="ml16">Konnect</h1>
+                    <p class="headline">
+                        <b>Have you ever moved to a new place? How easy was it for you to
+                            meet people and make friends? Challenging right?</b>
+                    </p>
+                    <p class="headline">Friendship needs time to grow. But as we grow up, it is
+                        more and more difficult to find the time and energy to develop close
+                        friendship. Taking care of our family, managing our career goals,
+                        spending time without partner... We have a busy life.
+                    </p>
+                    <p class="headline">I've been living in Amsterdam for 2 years now (and
+                        loving it!), but developing close friendship is challenging for me
+                        (COVID
+                        doesn't help). So I decided to deep dive into this assumption and see if
+                        other people felt the same.
+                    </p>
+                </div>
+                <div class="col-2">
+                    <div class="col">
+                        <h2>Project setup</h2>
+                        <ul class="list">
+                            <li><span class="key">Team</span> <span class="value">Me, myself and
+                                    I</span></li>
+                            <li><span class="key">Timeline</span> <span class="value">Evenings
+                                    and
+                                    weekends during 4 weeks</span></li>
+                            <li><span class="key">Context</span> <span class="value">Final
+                                    project
+                                    at Ironhack UX/UI Design Bootcamp</span></li>
+                            <li><span class="key">Process</span> <span class="value">Design
+                                    thinking, from user
+                                    research to high-fi prototype</span></li>
+                            <li><span class="key">Tools</span> <span class="value">Figma,
+                                    Whimsical, Maze</span></li>
+                            <li><span class="key">Achievement</span> <span class="value">Won the
+                                    prize of the best project of the bootcamp on 18
+                                    projects</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-1">
-                        <div class="col">
-                            <h2>User research: 10 things I learned about friendship</h2>
-                            <p>I made 2 surveys, conducted 4 users interviews, gathered qualitative
-                                data
-                                from 15 people in an open questions form, and spend hours scrolling
-                                through the internet. Here is what I've learned.</p>
-                            <ul class="list">
-                                <li>65% of the respondents of my survey say they share <b>common
-                                        values</b>
-                                    with their close
-                                    friends</li>
-                                <li>Building close friendship require <b>unique experiences</b>:
-                                    memorable that
-                                    you will share with each other and that will be the ground of
-                                    your
-                                    friendship</li>
-                                <li>63% of the respondents of a OnePoll survey say that the number
-                                    one
-                                    cause of lost friendships is <b>moving away</b></li>
-                                <li>53% of the respondents of my survey mentionned that <b>not
-                                        knowing a
-                                        lot of people in their current country or city</b> prevent
-                                    them
-                                    to find
-                                    more friends</li>
-                                <li>When you move to another place, people who live there most
-                                    probably
-                                    already have their own circle of friends, and they don't
-                                    particularly
-                                    want to <b>invest time in buidling new friendship</b>.</li>
-                                <li><b>Couples</b> tend to have more difficulty findings friend
-                                    because
-                                    they
-                                    they feel less alone and <b>don't see the
-                                        immediate need of meeting new people</b></li>
-                                <li>66,5% of my respondents said they <b>met their friends at
-                                        work</b>.
-                                    But
-                                    some interviewees mentionned they would like to keep a clear
-                                    separation between work and your
-                                    personal life.</li>
-                                <li>The ideal condition to meet new people is in a <b>small
-                                        group</b>:
-                                    one-and-one are intimidating, and the energy in a large group
-                                    prevent you from building intimate relationship</li>
-                            </ul>
-                            <p>Want to see more? <a
-                                    href="./files/konnect/affinity-diagram.pdf">Check my
-                                    affinity diagram</a>.</p>
-                        </div>
+                    <div class="col">
+                        <img src="./img/konnect/mockup-perspective.png" />
                     </div>
-                    <div class="col-1">
-                        <div class="col">
-                            <img src="./img/konnect/user-persona.png" />
-                        </div>
+                </div>
+                <div class="col-1">
+                    <div class="col">
+                        <h2>User research: 10 things I learned about friendship</h2>
+                        <p>I made 2 surveys, conducted 4 users interviews, gathered qualitative
+                            data
+                            from 15 people in an open questions form, and spend hours scrolling
+                            through the internet. Here is what I've learned.</p>
+                        <ul class="list">
+                            <li>65% of the respondents of my survey say they share <b>common
+                                    values</b>
+                                with their close
+                                friends</li>
+                            <li>Building close friendship require <b>unique experiences</b>:
+                                memorable that
+                                you will share with each other and that will be the ground of
+                                your
+                                friendship</li>
+                            <li>63% of the respondents of a OnePoll survey say that the number
+                                one
+                                cause of lost friendships is <b>moving away</b></li>
+                            <li>53% of the respondents of my survey mentionned that <b>not
+                                    knowing a
+                                    lot of people in their current country or city</b> prevent
+                                them
+                                to find
+                                more friends</li>
+                            <li>When you move to another place, people who live there most
+                                probably
+                                already have their own circle of friends, and they don't
+                                particularly
+                                want to <b>invest time in buidling new friendship</b>.</li>
+                            <li><b>Couples</b> tend to have more difficulty findings friend
+                                because
+                                they
+                                they feel less alone and <b>don't see the
+                                    immediate need of meeting new people</b></li>
+                            <li>66,5% of my respondents said they <b>met their friends at
+                                    work</b>.
+                                But
+                                some interviewees mentionned they would like to keep a clear
+                                separation between work and your
+                                personal life.</li>
+                            <li>The ideal condition to meet new people is in a <b>small
+                                    group</b>:
+                                one-and-one are intimidating, and the energy in a large group
+                                prevent you from building intimate relationship</li>
+                        </ul>
+                        <p>Want to see more? <a href="./files/konnect/affinity-diagram.pdf">Check my
+                                affinity diagram</a>.</p>
                     </div>
-                    <div class="col-1">
-                        <div class="col">
-                            <h2>Problem statement</h2>
-                            <div class="quote">
-                                <p>Adults who moved to a new place less than 5 years ago</p>
-                                <p>
-                                    Need to meet people who share their values and interests and are
-                                    willing
-                                    to develop a friendship
-                                </p>
-                                <p>
-                                    So that they have people with whom to talk to and share memories
-                                    in
-                                    their current area</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-1">
+                    <div class="col">
+                        <img src="./img/konnect/user-persona.png" />
                     </div>
-                    <div class="col-2">
-                        <div class="col">
-                            <img src="./img/konnect/crazy-8.png" />
-                        </div>
-                        <div class="col">
-                            <h2>Ideate</h2>
-                            <p>My classmates helped me to generate ideas with a <b>Crazy 8
-                                    workshop</b>.</p>
-                            <p>I continue to brainstorm by generating some <b>how might we
-                                    statement</b>, and some <b>worst ideas</b>.</p>
-                            <p>It helped me to define what will be my concept:</p>
-                            <div class="quote mt-4 mb-4">
-                                Konnect is an application where you can organize activities, and
-                                find people who are willing to join you.
-                                You choose the activity, the date, the time, and the number of
-                                participants (maximum 6).
-                            </div>
-                            <p>This concept was tested with success on users thanks to a survey.
-                                83,1% of the participants said they would use this application.</p>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="col">
-                            <h2>Design positivity</h2>
-                            <p>When I started to brainstorm on Konnect's design, I encounter two
-                                challenges.</p>
+                </div>
+                <div class="col-1">
+                    <div class="col">
+                        <h2>Problem statement</h2>
+                        <div class="quote">
+                            <p>Adults who moved to a new place less than 5 years ago</p>
                             <p>
-                                First, according to my concept testing survey, <b>50% of the users
-                                    wanted to be able to select the participants who will join
-                                    an activity they organized</b>.
+                                Need to meet people who share their values and interests and are
+                                willing
+                                to develop a friendship
                             </p>
                             <p>
-                                But I also learned during the research phase that users of Tinder
-                                felt ever more lonely after using it than before, because of the
-                                matching mechanism.
-                            </p>
-                            <p>
-                                By providing the option to people to accept or rejects participants,
-                                I would gave them the opportunity to select
-                                exactly the people they want to meet. At the same time, I'll will
-                                contribute to a negative feeling of rejection.
-                            </p>
-                            <p>
-                                <b>Based on this observation I decided to remove the selection from
-                                    my list of feature.</b>
-                            </p>
-                        </div>
-                        <div class="col">
-                            <img src="./img/konnect/paper-prototype.png" />
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="col">
-                            <img src="./img/konnect/concept-test-survey.png" />
-                        </div>
-                        <div class="col">
-                            <h2>Design against systemic racism</h2>
-                            <p>
-                                The second challenge I had to face came up after a discussion I had
-                                with an interviewee.
-                            </p>
-                            <p>
-                                He was explaining to me that he felt discriminated in the past on
-                                some social networks because of his skin color: he was not able to
-                                find drivers on a famous French carpooling application. After
-                                switching his
-                                profile picture to a white man, he was able to find drivers way
-                                easily. This triggered my reflexion.
-                            </p>
-                            <p class="quote mt-2 mb-2">
-                                You don't make friends with
-                                people because of their skin color, or because of the way they look.
-                                You make friends with people because they share values or interests
-                                with you.
-                            </p>
-                            <p>This assumption was validated by my survey resuls, so I decided to
-                                <b>remove any information that could trigger systemic
-                                    discrimination</b>: no name, no profile picture.</p>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="col">
-                            <h2>Test, test and retest</h2>
-                            <p>Of course I started with a paper prototype that I've tested on 2
-                                people.</p>
-                            <p>Then I jumped into a mid-fi prototype that I tested in Maze.</b>.
-                            </p>
-                            <p class="quote mt-2 mb-2">66 people tested the Mid-fi prototype.</p>
-                            <p>
-                                It helped me to identify the critical elements to display on the
-                                screen, and to make a list of what was missing.
-                            </p>
-                            <p>
-                                Test report is available <a
-                                    href="https://app.maze.design/report/1kr7m8kinc7bfl#intro"
-                                    target="_blank">here.</a>
-                            </p>
-                        </div>
-                        <div class="col">
-                            <img src="./img/konnect/maze.png" />
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class="col">
-                            <img src="./img/konnect/moodboard.png" />
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class=" center">
-                            <h2>Excited to see the final result? Try it out!</h2>
-                        </div>
-                        <div>
-                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"
-                                height="600"
-                                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FIrZ5nbLZqHehYdBjfvlWa5%2FFinal-project-Am%25C3%25A9lie%3Fnode-id%3D838%253A4432%26viewport%3D154%252C81%252C0.041804298758506775%26scaling%3Dscale-down"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="col-1">
-                        <div class=" center">
-                            <p>Do you want to have a closer look at my process?</p>
-                            <h2 class="mt-2"><a
-                                    href="https://www.figma.com/file/IrZ5nbLZqHehYdBjfvlWa5/Final-project-Am%C3%A9lie?node-id=51%3A2"
-                                    target="_blank">Click here to check my Figma file</a></h2>
-                            <p>Known in my team as the Queen of layers renaiming, I’m
-                                curious to hear if you found any tricks or you have any tips for me!
-                            </p>
+                                So that they have people with whom to talk to and share memories
+                                in
+                                their current area</p>
                         </div>
                     </div>
                 </div>
-            </main>
-            <script src="js/animate-letters.js"></script>
-            <script src="js/anime.min.js"></script>
-            <script src="js/scrollMonitor.js"></script>
-            <script src="js/scroll.js"></script>
-            <script src="js/blobs.js"></script>
-            <script src="js/overlay.js"></script>
-            <script>
-                window.onload = openingOverlay();
-            </script>
+                <div class="col-2">
+                    <div class="col">
+                        <img src="./img/konnect/crazy-8.png" />
+                    </div>
+                    <div class="col">
+                        <h2>Ideate</h2>
+                        <p>My classmates helped me to generate ideas with a <b>Crazy 8
+                                workshop</b>.</p>
+                        <p>I continue to brainstorm by generating some <b>how might we
+                                statement</b>, and some <b>worst ideas</b>.</p>
+                        <p>It helped me to define what will be my concept:</p>
+                        <div class="quote mt-4 mb-4">
+                            Konnect is an application where you can organize activities, and
+                            find people who are willing to join you.
+                            You choose the activity, the date, the time, and the number of
+                            participants (maximum 6).
+                        </div>
+                        <p>This concept was tested with success on users thanks to a survey.
+                            83,1% of the participants said they would use this application.</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="col">
+                        <h2>Design positivity</h2>
+                        <p>When I started to brainstorm on Konnect's design, I encounter two
+                            challenges.</p>
+                        <p>
+                            First, according to my concept testing survey, <b>50% of the users
+                                wanted to be able to select the participants who will join
+                                an activity they organized</b>.
+                        </p>
+                        <p>
+                            But I also learned during the research phase that users of Tinder
+                            felt ever more lonely after using it than before, because of the
+                            matching mechanism.
+                        </p>
+                        <p>
+                            By providing the option to people to accept or rejects participants,
+                            I would gave them the opportunity to select
+                            exactly the people they want to meet. At the same time, I'll will
+                            contribute to a negative feeling of rejection.
+                        </p>
+                        <p>
+                            <b>Based on this observation I decided to remove the selection from
+                                my list of feature.</b>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="./img/konnect/paper-prototype.png" />
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="col">
+                        <img src="./img/konnect/concept-test-survey.png" />
+                    </div>
+                    <div class="col">
+                        <h2>Design against systemic racism</h2>
+                        <p>
+                            The second challenge I had to face came up after a discussion I had
+                            with an interviewee.
+                        </p>
+                        <p>
+                            He was explaining to me that he felt discriminated in the past on
+                            some social networks because of his skin color: he was not able to
+                            find drivers on a famous French carpooling application. After
+                            switching his
+                            profile picture to a white man, he was able to find drivers way
+                            easily. This triggered my reflexion.
+                        </p>
+                        <p class="quote mt-2 mb-2">
+                            You don't make friends with
+                            people because of their skin color, or because of the way they look.
+                            You make friends with people because they share values or interests
+                            with you.
+                        </p>
+                        <p>This assumption was validated by my survey resuls, so I decided to
+                            <b>remove any information that could trigger systemic
+                                discrimination</b>: no name, no profile picture.</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="col">
+                        <h2>Test, test and retest</h2>
+                        <p>Of course I started with a paper prototype that I've tested on 2
+                            people.</p>
+                        <p>Then I jumped into a mid-fi prototype that I tested in Maze.</b>.
+                        </p>
+                        <p class="quote mt-2 mb-2">66 people tested the Mid-fi prototype.</p>
+                        <p>
+                            It helped me to identify the critical elements to display on the
+                            screen, and to make a list of what was missing.
+                        </p>
+                        <p>
+                            Test report is available <a
+                                href="https://app.maze.design/report/1kr7m8kinc7bfl#intro"
+                                target="_blank">here.</a>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="./img/konnect/maze.png" />
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="col">
+                        <img src="./img/konnect/moodboard.png" />
+                    </div>
+                </div>
+                <div class="col-1 center">
+                    <h2>Excited to see the final result? Try it out!</h2>
+                    <div class="center mt-4">
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800"
+                            height="600"
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FIrZ5nbLZqHehYdBjfvlWa5%2FFinal-project-Am%25C3%25A9lie%3Fnode-id%3D838%253A4432%26viewport%3D154%252C81%252C0.041804298758506775%26scaling%3Dscale-down"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-1 center">
+                    <p>Do you want to have a closer look at my process?</p>
+                    <h2 class="mt-2"><a
+                            href="https://www.figma.com/file/IrZ5nbLZqHehYdBjfvlWa5/Final-project-Am%C3%A9lie?node-id=51%3A2"
+                            target="_blank">Click here to check my Figma file</a></h2>
+                    <p>Known in my team as the Queen of layers renaiming, I’m
+                        curious to hear if you found any tricks or you have any tips for me!
+                    </p>
+                </div>
+            </div>
+        </main>
+        <script src="js/animate-letters.js"></script>
+        <script src="js/anime.min.js"></script>
+        <script src="js/scrollMonitor.js"></script>
+        <script src="js/scroll.js"></script>
+        <script src="js/blobs.js"></script>
+        <script src="js/overlay.js"></script>
+        <script>
+            window.onload = openingOverlay();
+        </script>
 
-        </body>
+    </body>
 
 </html>

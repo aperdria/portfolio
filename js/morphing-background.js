@@ -158,7 +158,7 @@
 		{
 			path: 'M 415.6,206.3 C 407.4,286.6 438.1,373.6 496.2,454.8 554.3,536.1 497,597.2 579.7,685.7 662.4,774.1 834.3,731.7 898.5,653.4 962.3,575 967.1,486 937.7,370 909.3,253.9 937.7,201.5 833.4,105.4 729.3,9.338 602.2,13.73 530.6,41.91 459,70.08 423.9,126.1 415.6,206.3 Z',
 			pathAlt: 'M 415.6,206.3 C 407.4,286.6 415.5,381.7 473.6,462.9 531.7,544.2 482.5,637.6 579.7,685.7 676.9,733.8 826.2,710.7 890.4,632.4 954.2,554 926.8,487.6 937.7,370 948.6,252.4 937.7,201.5 833.4,105.4 729.3,9.338 602.2,13.73 530.6,41.91 459,70.08 423.9,126.1 415.6,206.3 Z',
-			scaleX: .4,
+			scaleX: 1,
 			scaleY: 1.4,
 			rotate: 0,
 			tx: 0,
@@ -330,36 +330,38 @@
 			const watcher = scrollMonitor.create(scrollElemToWatch, -300);
 
 			watcher.enterViewport(function () {
-				step = pos;
-				anime.remove(DOM.shapeEl);
-				anime({
-					targets: DOM.shapeEl,
-					duration: shapes[pos].animation.path.duration,
-					easing: shapes[pos].animation.path.easing,
-					elasticity: shapes[pos].animation.path.elasticity || 0,
-					d: shapes[pos].path,
-					fill: {
-						value: shapes[pos].fill.color,
-						duration: shapes[pos].fill.duration,
-						easing: shapes[pos].fill.easing
-					},
-					complete: function () {
-						initShapeLoop(pos);
-					}
-				});
-
-				anime.remove(DOM.svg);
-				anime({
-					targets: DOM.svg,
-					duration: shapes[pos].animation.svg.duration,
-					easing: shapes[pos].animation.svg.easing,
-					elasticity: shapes[pos].animation.svg.elasticity || 0,
-					scaleX: shapes[pos].scaleX,
-					scaleY: shapes[pos].scaleY,
-					translateX: shapes[pos].tx + 'px',
-					translateY: shapes[pos].ty + 'px',
-					rotate: shapes[pos].rotate + 'deg'
-				});
+				if (shapes[pos]) {
+					step = pos;
+					anime.remove(DOM.shapeEl);
+					anime({
+						targets: DOM.shapeEl,
+						duration: shapes[pos].animation.path.duration,
+						easing: shapes[pos].animation.path.easing,
+						elasticity: shapes[pos].animation.path.elasticity || 0,
+						d: shapes[pos].path,
+						fill: {
+							value: shapes[pos].fill.color,
+							duration: shapes[pos].fill.duration,
+							easing: shapes[pos].fill.easing
+						},
+						complete: function () {
+							initShapeLoop(pos);
+						}
+					});
+	
+					anime.remove(DOM.svg);
+					anime({
+						targets: DOM.svg,
+						duration: shapes[pos].animation.svg.duration,
+						easing: shapes[pos].animation.svg.easing,
+						elasticity: shapes[pos].animation.svg.elasticity || 0,
+						scaleX: shapes[pos].scaleX,
+						scaleY: shapes[pos].scaleY,
+						translateX: shapes[pos].tx + 'px',
+						translateY: shapes[pos].ty + 'px',
+						rotate: shapes[pos].rotate + 'deg'
+					});
+				}
 			});
 
 			watcher.exitViewport(function () {

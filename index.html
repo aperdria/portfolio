@@ -24,11 +24,11 @@
         <div class="overlay closed"></div>
         <header>
             <nav id="menu-mobile">
-                <a class="menu-item active" href="#home">Home</a>
-                <a class="menu-item" href="#projects">Projects</a>
-                <a class="menu-item" href="#resume">Resume</a>
-                <a class="menu-item" href="#about">About me</a>
-                <a class="menu-item" href="#contact">Get in touch</a>
+                <a class="menu-item-mobile active" href="#home">Home</a>
+                <a class="menu-item-mobile" href="#projects">Projects</a>
+                <a class="menu-item-mobile" href="#resume">Resume</a>
+                <a class="menu-item-mobile" href="#about">About me</a>
+                <a class="menu-item-mobile" href="#contact">Get in touch</a>
             </nav>
         </header>
         <div class="morph-wrap">
@@ -69,54 +69,77 @@
                             <span class="letters">Developer</span>
                         </span>
                     </p>
-                    <div id="introduction">
-                        <div id="introduction-picture">
-                            <img class="content-img" src="img/amelie_perdriaud.jpg">
+                    <div class="col-2">
+                        <div class="col profile-picture">
+                            <img src="./img/amelie_perdriaud.jpg" />
                         </div>
-                        <div id="introduction-text">
-                            <p>
-                                After working 5 years as a full-stack developer, I graduated
-                                from a
-                                UX/UI Design Bootcamp, where I learned everything I needed to
-                                bring more
-                                creativity into my job, and more satisfaction into customers'
-                                life.
-                            </p>
+                        <div class="col introduction-text">
+                            After working 5 years as a full-stack developer, I graduated from a
+                            UX/UI Design Bootcamp, where I learned everything I needed to bring more
+                            creativity into my job, and more satisfaction into customers' life.
                         </div>
                     </div>
-                    <a href="#projects"><i
-                            class="icon-cta far fa-arrow-alt-circle-down fa-5x"></i></a>
                 </div>
                 <div class="content-wrap" id="projects">
-                    <h3 class="content-title">Projects list</h3>
                     <div class="col-2">
-                        <div class="col">
-                            <h2><a onclick="navigateTo('konnect.html')">Konnect</a></h2>
+                        <div class="col center">
+                            <h2>Konnect</h2>
+                            <p>No matter your interests, there are people outside who share the
+                                same.</p>
+                            <button class="cta-button" onclick="navigateTo('konnect.html')">Read
+                                more</button>
                         </div>
                         <div class="col">
-                            <img onclick="navigateTo('konnect.html')" src="./img/konnect/mockup-perspective.png" />
+                            <img onclick="navigateTo('konnect.html')"
+                                src="./img/konnect/mockup-perspective.png" />
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="col">
+                            <img src="./img/helief/mockup-perspective.png" />
+                        </div>
+                        <div class="col center">
+                            <h2>Helief</h2>
+                            <p>A migraine diary to identify what trigger them.</p>
+                            <button class="cta-button disabled">Under construction</button>
                         </div>
                     </div>
                 </div>
                 <div class="content-wrap" id="resume">
-                    <h3 class="content-title">Resume</h3>
-                    <div class="resume-choices">
-                        <div class="choice">
-                            <a class="icon-social"
-                                href="https://www.linkedin.com/in/amelieperdriaud/"
-                                target="_blank"><i class="fa fa-linkedin fa-5x"
-                                    aria-hidden="true"></i></a>
-                        </div>
+                    <div class="col-1">
+                        <h3 class="content-title">Resume</h3>
+                        <button class="cta-button">
+                            <i class="fa fa-download" aria-hidden="true"></i> Download my
+                            resumé</button>
+                        <button href="https://www.linkedin.com/in/amelieperdriaud/" target="_blank"
+                            class="cta-button">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i> Browse my
+                            LinkedIn</button>
                     </div>
                 </div>
                 <div class="content-wrap" id="about">
-                    <h3 class="content-title">About me</h3>
+                    <div class="col-1">
+                        <h3 class="content-title">About me</h3>
+                        <p>Under construction</p>
+                    </div>
                 </div>
                 <div class="content-wrap" id="contact">
-                    <h3 class="content-title">Contact</h3>
+                    <div class="col-1">
+                        <h3 class="content-title">Get in touch</h3>
+                        <button href="https://www.linkedin.com/in/amelieperdriaud/" target="_blank"
+                            class="cta-button">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i> Contact me on
+                            LinkedIn</button>
+                    </div>
                 </div>
-                <div class="content-wrap footer" id="footer">
-                    <h3 class="content-title">Footer</h3>
+                <div class="content-wrap" id="footer">
+                    <div class="col-1">
+                        <p>Made with <i class="fas fa-heart"></i> by myself
+                        </p>
+                        <p>Copyright <i class="fa fa-copyright"
+                                aria-hidden="true"></i> Amélie
+                            Perdriaud 2021</p>
+                    </div>
                 </div>
             </div>
 
