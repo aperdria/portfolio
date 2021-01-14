@@ -1,0 +1,8 @@
+:root {
+    --primary-color: #E7B748;
+    --secondary-color: #009A8D;
+    --tertiary-color: #FDEFCC;
+    --background-color: #FDFDFD;
+
+    --progress-bar-position: var(--default-margin-x);
+}

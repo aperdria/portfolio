@@ -21,6 +21,7 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 
     <body>
+        <div class="overlay closed"></div>
         <header>
             <nav id="menu-mobile">
                 <a class="menu-item active" href="#home">Home</a>
@@ -40,7 +41,7 @@
         <main>
             <div id="menu-desktop">
                 <div class="logo">Amélie Perdriaud</div>
-                <h2>UX Designer & Developer</h2>
+                <div class="logo-subtitle">UX Designer & Developer</div>
                 <nav id="menu">
                     <ul>
                         <li><a class="menu-item active" href="#home">Home</a></li>
@@ -58,75 +59,65 @@
             <div class="scroll-line-vertical"></div>
             <div class="container" id="container">
                 <div class="content-wrap" id="home">
-                    <div class="content content--layout content--layout-1">
-                        <p class="headline content__title">hey there, I'm Amélie</p>
-                        <p class="ml11 sub-headline">
-                            I am
-                            <span class="text-wrapper">
-                                <span class="line line1"></span>
-                                <span class="letters">UX Designer</span>
-                                &
-                                <span class="letters">Developer</span>
-                            </span>
-                        </p>
-                        <div id="introduction">
-                            <div id="introduction-picture">
-                                <img class="content__img" src="img/amelie_perdriaud.jpg">
-                            </div>
-                            <div id="introduction-text" <p>
+                    <p class="headline content-title">hey there, I'm Amélie</p>
+                    <p class="ml11 sub-headline">
+                        I am
+                        <span class="text-wrapper">
+                            <span class="line line1"></span>
+                            <span class="letters">UX Designer</span>
+                            &
+                            <span class="letters">Developer</span>
+                        </span>
+                    </p>
+                    <div id="introduction">
+                        <div id="introduction-picture">
+                            <img class="content-img" src="img/amelie_perdriaud.jpg">
+                        </div>
+                        <div id="introduction-text">
+                            <p>
                                 After working 5 years as a full-stack developer, I graduated
                                 from a
                                 UX/UI Design Bootcamp, where I learned everything I needed to
                                 bring more
                                 creativity into my job, and more satisfaction into customers'
                                 life.
-                                </p>
-                            </div>
+                            </p>
                         </div>
-                        <a href="#projects"><i
-                                class="icon-cta far fa-arrow-alt-circle-down fa-5x"></i></a>
                     </div>
+                    <a href="#projects"><i
+                            class="icon-cta far fa-arrow-alt-circle-down fa-5x"></i></a>
                 </div>
                 <div class="content-wrap" id="projects">
-                    <div class="content content--layout content--layout-1">
-                        <img class="content__img" src=""/>
-                        <h3 class="content__title">Projects list</h3>
+                    <h3 class="content-title">Projects list</h3>
+                    <div class="col-2">
+                        <div class="col">
+                            <h2><a onclick="navigateTo('konnect.html')">Konnect</a></h2>
+                        </div>
+                        <div class="col">
+                            <img onclick="navigateTo('konnect.html')" src="./img/konnect/mockup-perspective.png" />
+                        </div>
                     </div>
                 </div>
                 <div class="content-wrap" id="resume">
-                    <div class="content content--layout content--layout-2">
-                        <img class="content__img" src=""/>
-                        <h3 class="content__title">Resume</h3>
-                        <div class="resume-choices">
-                            <div class="choice">
-
-                                <a class="icon-social"
-                                    href="https://www.linkedin.com/in/amelieperdriaud/"
-                                    target="_blank"><i class="fa fa-linkedin fa-5x"
-                                        aria-hidden="true"></i></a>
-                            </div>
-                            <div class="choice">
-                                B
-                            </div>
+                    <h3 class="content-title">Resume</h3>
+                    <div class="resume-choices">
+                        <div class="choice">
+                            <a class="icon-social"
+                                href="https://www.linkedin.com/in/amelieperdriaud/"
+                                target="_blank"><i class="fa fa-linkedin fa-5x"
+                                    aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="content-wrap" id="about">
-                    <div class="content content--layout content--layout-3">
-                        <img class="content__img"/>
-                        <h3 class="content__title">About me</h3>
-                    </div>
+                    <h3 class="content-title">About me</h3>
                 </div>
                 <div class="content-wrap" id="contact">
-                    <div class="content content--layout content--layout-4">
-                        <img class="content__img"/>
-                        <h3 class="content__title">Contact</h3>
-                    </div>
+                    <h3 class="content-title">Contact</h3>
                 </div>
-                <!-- Related demos -->
-                <section class="content content--related">
-                    <p class="content__info">Credits</p>
-                </section>
+                <div class="content-wrap footer" id="footer">
+                    <h3 class="content-title">Footer</h3>
+                </div>
             </div>
 
         </main>
@@ -137,6 +128,7 @@
         <script src="js/scrollMonitor.js"></script>
         <script src="js/scroll.js"></script>
         <script src="js/morphing-background.js"></script>
+        <script src="js/overlay.js"></script>
 
     </body>
 
