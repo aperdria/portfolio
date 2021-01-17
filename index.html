@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="././css/default.css" />
         <link rel="stylesheet" href="././css/tablet.css" />
-        <link rel="stylesheet" href="././css/mobile.css" />
         <link rel="stylesheet" href="././css/style.css" />
+        <link rel="stylesheet" href="././css/mobile.css" />
         <title>Amélie Perdriaud - Portfolio</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"
@@ -19,16 +19,17 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700"
             rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    </head>
 
     <body>
         <div class="overlay closed"></div>
         <header>
             <nav id="menu-mobile">
-                <a class="menu-item-mobile active" href="#home">Home</a>
-                <a class="menu-item-mobile" href="#projects">Projects</a>
-                <a class="menu-item-mobile" href="#resume">Resume</a>
-                <a class="menu-item-mobile" href="#about">About me</a>
-                <a class="menu-item-mobile" href="#contact">Get in touch</a>
+                <a class="menu-item active" href="#home">Home</a>
+                <a class="menu-item" href="#projects">Projects</a>
+                <a class="menu-item" href="#resume">Resumé</a>
+                <a class="menu-item" href="#about">About me</a>
+                <a class="menu-item" href="#contact">Get in touch</a>
             </nav>
         </header>
         <div class="morph-wrap">
@@ -46,8 +47,9 @@
                     <ul>
                         <li><a class="menu-item active" href="#home">Home</a></li>
                         <li><a class="menu-item" href="#projects">Projects</a></li>
-                        <li><a class="menu-item" href="#resume">Resume</a></li>
+                        <li><a class="menu-item" href="#resume">Resumé</a></li>
                         <li><a class="menu-item" href="#about">About me</a></li>
+                        <li><a class="menu-item" href="#testimonials">Testimonials</a></li>
                         <li><a class="menu-item" href="#contact">Get in touch</a></li>
                     </ul>
                     <a class="icon-social" href="https://www.linkedin.com/in/amelieperdriaud/"
@@ -59,16 +61,27 @@
             <div class="scroll-line-vertical"></div>
             <div class="container" id="container">
                 <div class="content-wrap" id="home">
-                    <p class="headline content-title">hey there, I'm Amélie</p>
-                    <p class="ml11 sub-headline">
-                        I am
-                        <span class="text-wrapper">
-                            <span class="line line1"></span>
-                            <span class="letters">UX Designer</span>
-                            &
-                            <span class="letters">Developer</span>
-                        </span>
-                    </p>
+                    <div class="col-1 profile-picture-mobile">
+                        <img src="./img/amelie_perdriaud.jpg" />
+                    </div>
+                    <div class="col-1">
+                        <p class="content-title headline">hey there, I'm Amélie</p>
+                        <p class="ml11 headline">
+                            I am a
+                            <span class="mobile-only"><br></span>
+                            <span class="text-wrapper">
+                                <span class="letters">UX Designer</span>
+                                &
+                                <span class="letters">Developer</span>
+                            </span>
+                        </p>
+                        <p class="ml11 sub-headline">
+                            based in
+                            <span class="text-wrapper">
+                                <span class="letters city">Amsterdam</span>
+                            </span>
+                        </p>
+                    </div>
                     <div class="col-2">
                         <div class="col profile-picture">
                             <img src="./img/amelie_perdriaud.jpg" />
@@ -81,64 +94,176 @@
                     </div>
                 </div>
                 <div class="content-wrap" id="projects">
+                    <div class="col-1 content-title">
+                        <h3>Projects</h3>
+                    </div>
                     <div class="col-2">
+                        <div class="col center mobile-only">
+                            <img onclick="navigateTo('konnect.html')"
+                                src="./img/konnect/mockup-perspective.png" />
+                        </div>
                         <div class="col center">
                             <h2>Konnect</h2>
                             <p>No matter your interests, there are people outside who share the
                                 same.</p>
-                            <button class="cta-button" onclick="navigateTo('konnect.html')">Read
-                                more</button>
+                            <a class="cta-button" onclick="navigateTo('konnect.html')">Read
+                                more</a>
                         </div>
-                        <div class="col">
+                        <div class="col desktop-only">
                             <img onclick="navigateTo('konnect.html')"
                                 src="./img/konnect/mockup-perspective.png" />
                         </div>
                     </div>
                     <div class="col-2">
-                        <div class="col">
+                        <div class="col center">
                             <img src="./img/helief/mockup-perspective.png" />
                         </div>
                         <div class="col center">
                             <h2>Helief</h2>
                             <p>A migraine diary to identify what trigger them.</p>
-                            <button class="cta-button disabled">Under construction</button>
+                            <a class="cta-button disabled">Under construction</a>
                         </div>
                     </div>
                 </div>
                 <div class="content-wrap" id="resume">
-                    <div class="col-1">
-                        <h3 class="content-title">Resume</h3>
-                        <button class="cta-button">
+                    <div class="col-1 content-title">
+                        <h3>Resumé</h3>
+                    </div>
+                    <div class="col-1 center no-padding">
+                        <a href="files/Amelie_Perdriaud_resume_2021.pdf" target="_blank"
+                            class="cta-button">
                             <i class="fa fa-download" aria-hidden="true"></i> Download my
-                            resumé</button>
-                        <button href="https://www.linkedin.com/in/amelieperdriaud/" target="_blank"
+                            resumé</a>
+                        <a href="https://www.linkedin.com/in/amelieperdriaud/" target="_blank"
                             class="cta-button">
                             <i class="fa fa-linkedin" aria-hidden="true"></i> Browse my
-                            LinkedIn</button>
+                            LinkedIn</a>
                     </div>
                 </div>
                 <div class="content-wrap" id="about">
-                    <div class="col-1">
-                        <h3 class="content-title">About me</h3>
-                        <p>Under construction</p>
+                    <div class="col-1 content-title">
+                        <h3>About me</h3>
+                    </div>
+                    <div class="col-2">
+                        <div class="col">
+                            <h2>Plant lover</h2>
+                            <p>I grew up in a beautiful garden in the countryside of the South of
+                                France. Plants and flowers are my
+                                second nature. Some people are meditating, I am gardening. I have
+                                more than 50 baby plants at home, and I make my own vegetables
+                                garden on my balcony every year.
+                            </p>
+                            <p><i>It challenges my patience and teach me to learn from my
+                                    mistakes.</i></p>
+                        </div>
+                        <div class="col center">
+                            <img src="./img/gardening.jpeg" />
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="col center">
+                            <img src="./img/ceramic.jpeg" />
+                        </div>
+                        <div class="col">
+                            <h2>Keep your hands dirty</h2>
+                            <p>See this little bowl ? Pretty ugly right?</p>
+                            <p>This is the first ceramic I have ever crafted.
+                                I keep it as a souvenir, to remind myself that <b>things can't be
+                                    perfect the first time around</b>, and that <b>you can't learn
+                                    without practicing</b>!
+                            </p>
+                            <p><i>Plus it's actually useful: it makes a perfect peanut bowl. That's
+                                    what we call a MVP!</i></p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="col">
+                            <h2>Meditation</h2>
+                            <p>When gardening is not enough, I meditate. And I use this <a
+                                    href="https://www.morphee.co/products/morphee"
+                                    target="_blank">wonderful tool</a>
+                                to do it. This object is the definition
+                                of a <b>good design</b>.</p>
+                            <p>Useful, aesthetic, understandable, unobtrusive, innovative, long
+                                lasting... Ma favorite object in the world (and probably the most
+                                useful!)</p>
+                        </div>
+                        <div class="col center">
+                            <img src="./img/morphee.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-wrap" id="testimonials">
+                    <div class="col-1 content-title">
+                        <h3>What others say about me</h3>
+                    </div>
+                    <div class="col-3">
+                        <div class="col">
+                            <p class="quote">I think Amélie is very organised, structured and
+                                methodical which are
+                                all great traits to have for our discipline. I also think she
+                                is very result-oriented. We already know she is a perfectionist,
+                                which means she is never happy with the final result. The fact that
+                                she is probably hard on herself would make her a good designer as
+                                she has no problem to reiterate. It also means that she takes
+                                criticisms very well.
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p class="quote">Her honesty and transparency, not only does it make it
+                                easier to ask her for her opinion about important topics, but it
+                                also gives a level of trust to her colleagues and her clients,
+                                which is very important to establish as a consultant.
+                            </p>
+                            <p class="quote">I worked along with Amelie as part of team for a
+                                banking client. Her proactiveness in solving issues and setting up
+                                the development processes that needs to be followed within a scrum
+                                team
+                                is really commendable. She did a fabulous job in understanding the
+                                customer requirements, helped customer in detailing out the
+                                requirements, and transformed into IT solution.
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p class="quote">One of the main strengths she has is the fact that she
+                                bring a lot of efficiency to the team. And her efficiency is not
+                                just on the technical side. I see it in
+                                day-to-day events such as meetings as well where she tries to guide
+                                it
+                                the right direction if the team starts getting distracted. Her
+                                proactiveness in the team, whether it is to lead a discussion or to
+                                take ownership of a task is quite impressive. <br><br>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1 no-padding center">
+                        <img src="./img/cloud_words.png" />
+                        <p class="small">Created from feedbacks I
+                            gathered from 14 people I've worked with in the past 5 years.</p>
                     </div>
                 </div>
                 <div class="content-wrap" id="contact">
-                    <div class="col-1">
-                        <h3 class="content-title">Get in touch</h3>
-                        <button href="https://www.linkedin.com/in/amelieperdriaud/" target="_blank"
+                    <div class="col-1 content-title">
+                        <h3>Get in touch</h3>
+                    </div>
+                    <div class="col-1 center no-padding">
+                        <a href="https://www.linkedin.com/in/amelieperdriaud/" target="_blank"
                             class="cta-button">
                             <i class="fa fa-linkedin" aria-hidden="true"></i> Contact me on
-                            LinkedIn</button>
+                            LinkedIn</a>
                     </div>
                 </div>
-                <div class="content-wrap" id="footer">
-                    <div class="col-1">
+                <div class="content-wrap footer" id="footer">
+                    <div class="col-1 center">
                         <p>Made with <i class="fas fa-heart"></i> by myself
                         </p>
-                        <p>Copyright <i class="fa fa-copyright"
-                                aria-hidden="true"></i> Amélie
+                        <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Amélie
                             Perdriaud 2021</p>
+                    </div>
+                    <div class="col-1 center">
+                        <a href="#home" class="to-the-top"><i class="fa fa-angle-double-up fa-5x" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>

@@ -15,6 +15,27 @@ body {
     background-color: var(--background-color);
 }
 
+/* Generic css */
+
+
+.center {
+    text-align: center !important;
+    align-items: center !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+ul {
+    padding-left: var(--margin-default-x);
+    padding-top: var(--margin-default-y);
+}
+
+li .key {
+    font-weight: bold;
+}
+
 /* Margins and padding */
 .mt-1 {
     margin-top: 16px;
@@ -65,10 +86,6 @@ body {
     padding-bottom: 32px;
 }
 
-.center {
-    text-align: center;
-}
-
 main {
     display: flex;
     margin-left: var(--margin-large-x);
@@ -104,7 +121,7 @@ p {
     font-weight: 500;
 }
 
-p .small {
+p.small {
     font-family: 'Quicksand', sans-serif;
     font-size: var(--font-size-small);
     font-weight: 500;
@@ -115,6 +132,16 @@ a:visited {
     color: var(--primary-color);
 }
 
+.quote {
+    font-style: italic;
+    background-image: url(../img/quotes.svg);
+    background-size: 20%;
+    background-repeat: no-repeat;
+}
+
+br {
+    line-height: 150%;
+}
 
 /* Columns */
 
@@ -124,7 +151,6 @@ a:visited {
     display: flex;
     flex-direction: column;
     align-content: center;
-    align-items: center;
     width: 100%;
     padding-top: var(--margin-large-y);
     padding-bottom: var(--margin-large-y);
@@ -133,6 +159,14 @@ a:visited {
 .col-1 .picture {
     width: 80%;
     text-align: center;
+}
+
+.col-1 .col-title {
+    padding-bottom: var(--margin-default-y);
+}
+
+.col-1 img {
+    width: 100%;
 }
 
 /* 2 columns */
@@ -150,7 +184,7 @@ a:visited {
 }
 
 .col-2 .col {
-    width: 48%;
+    width: var(--col-2-width);
 }
 
 .col-2 img {
@@ -161,7 +195,6 @@ a:visited {
 
 .col-3 {
     display: flex;
-    align-content: center;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
@@ -171,10 +204,17 @@ a:visited {
 }
 
 .col-3 .col {
-    width: 30%;
+    width: var(--col-3-width);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.col-2 img {
+.col-3 .col p {
+    margin-top: var(--margin-default-y);
+}
+
+.col-3 img {
     width: 100%;
 }
 
@@ -197,7 +237,8 @@ a:visited {
 
 /* Buttons */
 
-.cta-button {
+a.cta-button {
+    display: inline-block;
     background-color: var(--primary-color);
 
     color: var(--white);
@@ -205,10 +246,11 @@ a:visited {
 
     border: none;
     border-radius: 20px;
-    box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow-button);
 
     padding: var(--margin-small-y) var(--margin-default-x) var(--margin-small-y) var(--margin-default-x);
-    margin-top: var(--margin-medium-y);
+    margin-top: var(--margin-large-y);
+    max-width: 250px;
 }
 
 .cta-button:hover {
@@ -250,7 +292,6 @@ a:visited {
 
 
 .ml11 {
-    font-weight: 700;
     font-size: 3;
 }
 
@@ -430,17 +471,22 @@ a:visited {
     margin-top: var(--margin-extra-large-y);
 }
 
+#home .col-1 {
+    padding: 0;
+}
+
 #home .headline {
     font-family: 'Quicksand', sans-serif;
     font-size: var(--font-size-extra-large);
     padding-bottom: var(--margin-default-y);
     font-weight: 700;
+    line-height: 2.5rem;
+    text-align: left;
 }
 
 #home .sub-headline {
     font-family: 'Quicksand', sans-serif;
     font-size: var(--font-size-large);
-    padding-bottom: var(--margin-default-y);
 }
 
 #home .profile-picture {
@@ -448,7 +494,7 @@ a:visited {
 }
 
 #home .introduction-text {
-    width: 60%;
+    width: var(--introduction-width);
     font-size: var(--font-size-default);
     line-height: 2rem;
 }
@@ -458,12 +504,20 @@ a:visited {
     width: 100%;
 }
 
-/* RESUME */
+#home .profile-picture-mobile {
+    align-items: center;
+    margin-bottom: var(--margin-medium-y);
+}
 
-.resume-choices {
-    display: flex;
-    flex-direction: row;
+#home .profile-picture-mobile img {
+    border-radius: 50%;
+    width: 75%;
+    max-width: 300px;
     text-align: center;
+}
+
+#home .city {
+    color: var(--secondary-color);
 }
 
 /* USE CASES */
@@ -501,10 +555,6 @@ a:visited {
     padding-top: 8px;
 }
 
-#use-case .list .key {
-    font-weight: bold;
-}
-
 #use-case h2 {
     color: var(--primary-color);
 }
@@ -536,6 +586,7 @@ a:visited {
 }
 
 .content-title {
+    text-align: center;
     padding-top: var(--margin-default-y);
     padding-bottom: var(--margin-default-y);
 }
@@ -547,4 +598,11 @@ a:visited {
     font-family: 'PT Mono', sans-serif;
     color: var(--dark-grey);
     font-size: var(--font-size-small);
+}
+
+/* To the top icon */
+
+.to-the-top,
+a.to-the-top {
+    color: var(--light-grey);
 }
