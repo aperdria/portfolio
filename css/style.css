@@ -132,9 +132,9 @@ a:visited {
     color: var(--primary-color);
 }
 
-.quote {
+#testimonials .quote {
     font-style: italic;
-    background-image: url(../img/quotes.svg);
+    background-image: url(../img/home/quotes.svg);
     background-size: 20%;
     background-repeat: no-repeat;
 }
@@ -239,7 +239,7 @@ br {
 
 a.cta-button {
     display: inline-block;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 
     color: var(--white);
     font-size: var(--font-size-default);
@@ -254,7 +254,7 @@ a.cta-button {
 }
 
 .cta-button:hover {
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
 }
 
 .cta-button:pressed {

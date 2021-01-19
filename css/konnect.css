@@ -6,3 +6,8 @@
 
     --progress-bar-position: var(--margin-default-x);
 }
+
+.highlight {
+    font-weight: bold;
+    color: var(--secondary-color);
+}

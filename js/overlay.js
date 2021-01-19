@@ -2,11 +2,7 @@ function navigateTo(path) {
     closingOverlay()
 
     setTimeout(() => {
-        var regex = /index.html.*/
-        var next = window.location.href;
-        next = next.replace(regex, path);
-        console.log(next);
-        window.location.href = next;
+        window.location.href = window.location.hostname + path;
     }, 1000);
 }
 
