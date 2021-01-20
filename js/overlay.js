@@ -2,9 +2,7 @@ function navigateTo(path) {
     closingOverlay()
 
     setTimeout(() => {
-        console.log('window.location.hostname', window.location.hostname);
-        console.log('path', path);
-        window.location = window.location.hostname + '/' + path + '.html';
+        window.location.href = 'http://' + window.location.hostname + '/' + path + '.html';
     }, 1000);
 }
 
