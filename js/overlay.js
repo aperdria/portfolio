@@ -2,7 +2,9 @@ function navigateTo(path) {
     closingOverlay()
 
     setTimeout(() => {
-        window.location.href = window.location.hostname + path;
+        console.log('window.location.hostname', window.location.hostname);
+        console.log('path', path);
+        window.location.assign(window.location.hostname + '/' + path + '.html');
     }, 1000);
 }
 
@@ -21,8 +23,8 @@ function closingOverlay() {
         .add({
             width: '100%',
             zIndex: {
-              value: [0, 1000],
-              round: true
+                value: [0, 1000],
+                round: true
             },
         })
         .add({
@@ -47,8 +49,8 @@ function openingOverlay() {
         .add({
             width: '0',
             zIndex: {
-              value: [1000, 0],
-              round: true
+                value: [1000, 0],
+                round: true
             },
             delay: 1000
         })
