@@ -4,7 +4,7 @@ function navigateTo(path) {
     setTimeout(() => {
         console.log('window.location.hostname', window.location.hostname);
         console.log('path', path);
-        window.location.assign(window.location.hostname + '/' + path + '.html');
+        window.location.href = window.location.hostname + '/' + path + '.html';
     }, 1000);
 }
 
