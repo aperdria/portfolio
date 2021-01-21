@@ -25,18 +25,13 @@ document.addEventListener('scroll', function () {
         var nextElementPositionY = coordinates[keyNext].top + initialScrollTop;
 
         if (currentPosition + 1 >= elementPositionY &&
-            (currentPosition <= nextElementPositionY - 1 || key === keyNext)) {
+            (currentPosition < nextElementPositionY || key === keyNext)) {
             list[i].className = "menu-item active";
         } else {
             list[i].className = "menu-item";
         }
     }
 }, true);
-
-/* Scroll to relevant anchor */
-function scrollTo(hash) {
-    location.hash = "#" + hash;
-}
 
 /* Vertical progress scroll line indicator */
 $(window).scroll(function () {
