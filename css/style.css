@@ -23,6 +23,11 @@ body {
     align-items: center !important;
 }
 
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
 .no-padding {
     padding: 0 !important;
 }

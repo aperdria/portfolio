@@ -40,3 +40,20 @@
     --dark-grey: #333;
     --black: #000;
 }
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-SemiBold.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: PT Mono;
+    src: url(../fonts/PTMono-Regular.ttf);
+}
