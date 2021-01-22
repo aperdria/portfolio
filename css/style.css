@@ -171,7 +171,8 @@ br {
     padding-bottom: var(--margin-large-y);
 }
 
-.col-1 img, .col-1 .col img {
+.col-1 img,
+.col-1 .col img {
     width: 80%;
     text-align: center;
 }
@@ -203,7 +204,8 @@ br {
 }
 
 .col-2 img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
 }
 
 /* 3 columns */
@@ -341,7 +343,7 @@ a.cta-button {
 .ml16 {
     padding: 40px 0;
     font-weight: 800;
-    font-size: 2em;
+    font-size: 3em;
     text-transform: uppercase;
     letter-spacing: 0.5em;
     overflow: hidden;

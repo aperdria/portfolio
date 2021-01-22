@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #E07074;
+    --secondary-color: #333;
+    --tertiary-color: #FFEDE8;
+    --background-color: #fff;
+
+    --progress-bar-position: var(--margin-default-x);
+}
+
+#use-case-intro {
+    background-image: url("../img/helief/helief_background.png");
+    background-size: cover;
+    border-radius: 0 0 150px 150px;
+    box-shadow: 0px 10px 20px 20px rgba(0, 0, 0, 0.25);
+
+    margin-left: calc(-1 * var(--margin-large-x));
+    margin-right: calc(-1 * var(--margin-large-x));
+    padding-left: var(--margin-large-x);
+    padding-right: var(--margin-large-x);
+}
+
+#use-case-intro h1 {
+    color: var(--primary-color);
+}
+
+
+#use-case-intro p,
+#use-case-intro a {
+    color: var(--tertiary-color);
+}
+
+
+#use-case {
+    margin-left: var(--margin-large-x);
+    margin-right: var(--margin-large-x);
+}
+
+@media screen and (min-width: 1440px) {
+    #use-case {
+        margin-left: var(--margin-extra-large-x);
+        margin-right: var(--margin-extra-large-x);
+    }
+}
