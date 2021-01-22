@@ -34,7 +34,7 @@ if (textWrapperMl16) {
       targets: '.ml16 .letter',
       translateY: [-100, 0],
       easing: "easeOutExpo",
-      duration: 2000,
-      delay: (el, i) => 500 + 30 * i
+      duration: 2500,
+      delay: (el, i) => 2000 + 50 * i
     });
 }
