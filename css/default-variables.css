@@ -1,0 +1,59 @@
+:root {
+    font-size: 16px;
+}
+
+:root {
+    --font-size-default: 1rem;
+
+    --font-size-small: 0.75rem;
+    --font-size-medium: 1.25rem;
+    --font-size-large: 1.5rem;
+    --font-size-extra-large: 2.25rem;
+
+    --border-radius: 10px;
+    --box-shadow-button: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    --margin-default-x: 32px;
+    --margin-default-y: 16px;
+
+    --margin-small-x: 8px;
+    --margin-small-y: 8px;
+    --margin-medium-x: 64px;
+    --margin-medium-y: 32px;
+    --margin-large-x: 100px;
+    --margin-large-y: 100px;
+    --margin-extra-large-x: 20vw;
+    --margin-extra-large-y: 10vh;
+
+    --introduction-width: 60%;
+    --col-2-width: 48%;
+    --col-3-width: 30%;
+
+    --progress-bar-position: var(--extra-large-margin);
+
+    --primary-color: #DBA293;
+    --secondary-color: #CE816D;
+    --tertiary-color: #F7DBDB;
+    --background-color: #FDFDFD;
+    --white: #FFF;
+    --light-grey: #ccc;
+    --dark-grey: #333;
+    --black: #000;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-SemiBold.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: PT Mono;
+    src: url(../fonts/PTMono-Regular.ttf);
+}

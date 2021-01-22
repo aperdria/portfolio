@@ -81,6 +81,10 @@
         text-align: center;
     }
 
+    #use-case .headline {
+        width: 100%;
+    }
+
     .introduction-text {
         padding-top: var(--margin-large-y);
     }
@@ -135,7 +139,7 @@
 
     /* 1 column */
 
-    .col-1 img {
+    .col-1 img, .col-1 .col img {
         max-width: 400px;
         padding-top: var(--margin-default-y);
         padding-bottom: var(--margin-default-y);

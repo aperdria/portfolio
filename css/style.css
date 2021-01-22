@@ -18,10 +18,19 @@ body {
 
 /* Generic css */
 
-
 .center {
     text-align: center !important;
     align-items: center !important;
+}
+
+.left {
+    text-align: left !important;
+    align-items: left !important;
+}
+
+.right {
+    text-align: right !important;
+    align-items: right !important;
 }
 
 .hidden {
@@ -162,7 +171,7 @@ br {
     padding-bottom: var(--margin-large-y);
 }
 
-.col-1 .picture {
+.col-1 img, .col-1 .col img {
     width: 80%;
     text-align: center;
 }
@@ -541,14 +550,11 @@ a.cta-button {
 }
 
 #use-case .headline {
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size-default);
     line-height: var(--font-size-extra-large);
     font-style: italic;
     padding-top: var(--margin-default-y);
-}
-
-#use-case img {
-    width: 100%;
+    width: 80%;
 }
 
 #use-case .list {
