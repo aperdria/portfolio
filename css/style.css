@@ -343,7 +343,7 @@ a.cta-button {
 .ml16 {
     padding: 40px 0;
     font-weight: 800;
-    font-size: 3em;
+    font-size: 2.5em;
     text-transform: uppercase;
     letter-spacing: 0.5em;
     overflow: hidden;
@@ -447,7 +447,7 @@ a.cta-button {
 }
 
 .icon-back {
-    padding-top: var(--margin-default-y);
+    padding-top: var(--margin-large-y);
 }
 
 .icon-back a {

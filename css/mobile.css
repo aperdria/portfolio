@@ -15,37 +15,8 @@
 
 
 @media screen and (max-width: 1024px) {
-    :root {
-        font-size: 14px;
-    }
-
-    :root {
-        --font-size-default: var(--font-size-default);
-        --font-size-small: 0.75rem;
-        --font-size-large: 1.5rem;
-        --font-size-extra-large: 1.75rem;
-
-        --border-radius: 10px;
-        --box-shadow-button: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        --box-shadow-menu: 0px 9px 20px rgba(0, 0, 0, 0.25);
-
-        --introduction-width: 100%;
-        --col-2-width: 100%;
-        --col-3-width: 100%;
-
-        --margin-default-x: 16px;
-        --margin-default-y: 16px;
-        --margin-medium-x: 16px;
-        --margin-medium-y: 32px;
-        --margin-large-x: 16px;
-        --margin-large-y: 64px;
-        --margin-extra-large-x: 16px;
-        --margin-extra-large-y: 100px;
-    }
-
     main {
         display: flex;
-        margin: 0;
     }
 
     .desktop-only {
@@ -57,10 +28,6 @@
         margin-right: var(--margin-default-x);
         padding-left: var(--margin-default-x);
         padding-right: var(--margin-default-x);
-    }
-
-    .scroll-line-vertical {
-        margin-left: var(--margin-default-x);
     }
 
     .introduction {
@@ -85,9 +52,16 @@
         width: 100%;
     }
 
+    #use-case {
+        padding-left: var(--margin-large-x);
+        padding-right: var(--margin-large-x);
+    }
+
     #use-case-intro {
         border-radius: 0 0 15px 15px;
         padding-bottom: var(--margin-large-x);
+        padding-left: var(--margin-extra-large-x);
+        padding-right: var(--margin-extra-large-x);
     }
 
     .introduction-text {
@@ -146,9 +120,10 @@
 
     .col-1 img,
     .col-1 .col img {
+        width: 100%;
         max-width: 400px;
-        padding-top: var(--margin-default-y);
-        padding-bottom: var(--margin-default-y);
+        padding-top: var(--margin-large-y);
+        padding-bottom: var(--margin-large-y);
     }
 
     /* 2 columns */
@@ -163,9 +138,10 @@
     }
 
     .col-2 img {
+        width: 100%;
         max-width: 400px;
-        padding-top: var(--margin-default-y);
-        padding-bottom: var(--margin-default-y);
+        padding-top: var(--margin-large-y);
+        padding-bottom: var(--margin-large-y);
     }
 
 
@@ -180,14 +156,20 @@
     }
 
     .col-3 img {
+        width: 100%;
         max-width: 400px;
-        padding-top: var(--margin-default-y);
-        padding-bottom: var(--margin-default-y);
+        padding-top: var(--margin-large-y);
+        padding-bottom: var(--margin-large-y);
     }
 
     /* Buttons */
 
     a.cta-button {
         text-align: center;
+    }
+
+    /* Blobs */
+    #blob2 {
+        margin: 0;
     }
 }

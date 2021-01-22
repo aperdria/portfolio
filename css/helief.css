@@ -29,12 +29,6 @@
     color: var(--tertiary-color);
 }
 
-
-#use-case {
-    margin-left: var(--margin-large-x);
-    margin-right: var(--margin-large-x);
-}
-
 @media screen and (min-width: 1440px) {
     #use-case {
         margin-left: var(--margin-extra-large-x);
