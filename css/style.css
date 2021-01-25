@@ -61,57 +61,64 @@ li {
 }
 
 /* Margins and padding */
+.mt-0 {
+    margin-top: 0px !important;
+}
+
 .mt-1 {
-    margin-top: 16px;
+    margin-top: 16px !important;
 }
 
 .mt-2 {
-    margin-top: 24px;
+    margin-top: 24px !important;
 }
 
 .mt-4 {
-    margin-top: 32px;
+    margin-top: 32px !important;
 }
 
 .mb-1 {
-    margin-bottom: 16px;
+    margin-bottom: 16px !important;
 }
 
 .mb-2 {
-    margin-bottom: 24px;
+    margin-bottom: 24px !important;
 }
 
 .mb-4 {
-    margin-bottom: 32px;
+    margin-bottom: 32px !important;
 }
 
+.pt-0 {
+    padding-top: 0px !important;
+}
 
 .pt-1 {
-    padding-top: 16px;
+    padding-top: 16px !important;
 }
 
 .pt-2 {
-    padding-top: 24px;
+    padding-top: 24px !important;
 }
 
 .pt-4 {
-    padding-top: 32px;
+    padding-top: 32px !important;
 }
 
 .pt-8 {
-    padding-top: 64px;
+    padding-top: 64px !important;
 }
 
 .pb-1 {
-    padding-bottom: 16px;
+    padding-bottom: 16px !important;
 }
 
 .pb-2 {
-    padding-bottom: 24px;
+    padding-bottom: 24px !important;
 }
 
 .pb-4 {
-    padding-bottom: 32px;
+    padding-bottom: 32px !important;
 }
 
 main {
@@ -131,6 +138,7 @@ h1 {
 h2 {
     font-family: 'PT Mono', serif;
     font-size: var(--font-size-large);
+    padding-top: var(--margin-medium-y);
     padding-bottom: var(--margin-default-y);
     font-weight: 500;
 }
@@ -138,7 +146,7 @@ h2 {
 h3 {
     font-family: 'PT Mono', serif;
     font-size: var(--font-size-default);
-    padding-top: 64px;
+    padding-top: 24px;
 }
 
 p {
@@ -180,8 +188,13 @@ br {
     flex-direction: column;
     align-content: center;
     width: 100%;
-    padding-top: var(--margin-large-y);
-    padding-bottom: var(--margin-large-y);
+    padding-top: var(--margin-default-y);
+    padding-bottom: var(--margin-default-y);
+}
+
+.col-1 .col {
+    padding-top: var(--margin-default-y);
+    padding-bottom: var(--margin-default-y);
 }
 
 .col-1 img,
@@ -229,8 +242,8 @@ br {
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    padding-top: var(--margin-large-x);
-    padding-bottom: var(--margin-large-x);
+    padding-top: var(--margin-default-x);
+    padding-bottom: var(--margin-default-x);
 }
 
 .col-3 .col {
@@ -575,7 +588,6 @@ a.cta-button {
 
 #use-case .list {
     margin-left: var(--margin-default-x);
-    margin-top: var(--margin-default-y);
 }
 
 #use-case .list li {
@@ -587,9 +599,9 @@ a.cta-button {
     color: var(--primary-color);
 }
 
-#use-case .quote,
-#use-case .quote p {
-    font-family: 'PT Mono', serif;
+#use-case .problem-statement,
+#use-case .problem-statement p {
+    font-family: 'Quicksand', serif;
     font-size: var(--font-size-medium);
     line-height: var(--font-size-extra-large);
     font-style: italic;
@@ -633,4 +645,5 @@ a.cta-button {
 .to-the-top,
 a.to-the-top {
     color: var(--light-grey);
+    padding-top: var(--margin-large-y);
 }
