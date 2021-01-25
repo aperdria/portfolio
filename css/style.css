@@ -145,7 +145,7 @@ h2 {
 
 h3 {
     font-family: 'PT Mono', serif;
-    font-size: var(--font-size-default);
+    font-size: var(--font-size-medium);
     padding-top: 24px;
 }
 
