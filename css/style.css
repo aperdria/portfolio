@@ -23,6 +23,11 @@ body {
     align-items: center !important;
 }
 
+.top {
+    align-items: flex-start !important;
+    align-content: flex-start !important;
+}
+
 .left {
     text-align: left !important;
     align-items: left !important;
@@ -49,6 +54,10 @@ ul {
 
 li .key {
     font-weight: bold;
+}
+
+li {
+    padding-top: var(--margin-small-x);
 }
 
 /* Margins and padding */
@@ -224,6 +233,7 @@ br {
     width: var(--col-3-width);
     display: flex;
     justify-content: space-between;
+    align-content: flex-start;
     flex-wrap: wrap;
 }
 
