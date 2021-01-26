@@ -200,15 +200,12 @@ br {
 .col-1 img,
 .col-1 .col img {
     width: 80%;
+    height: 100%;
     text-align: center;
 }
 
 .col-1 .col-title {
     padding-bottom: var(--margin-default-y);
-}
-
-.col-1 img {
-    width: 100%;
 }
 
 /* 2 columns */
@@ -260,6 +257,7 @@ br {
 
 .col-3 img {
     width: 100%;
+    height: 100%;
 }
 
 /* Overlay */
