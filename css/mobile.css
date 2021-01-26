@@ -179,4 +179,8 @@
     #blob2 {
         margin: 0;
     }
+
+    .blobs {
+        width: 100%;
+    }
 }

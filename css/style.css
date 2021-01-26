@@ -410,7 +410,7 @@ a.cta-button {
 .blobs {
     z-index: -1000;
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 
@@ -646,4 +646,8 @@ a.cta-button {
 a.to-the-top {
     color: var(--light-grey);
     padding-top: var(--margin-large-y);
+}
+
+a.to-the-top:hover {
+    color: var(--tertiary-color);
 }
