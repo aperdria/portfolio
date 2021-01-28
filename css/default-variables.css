@@ -1,11 +1,11 @@
 :root {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 :root {
     --font-size-default: 1rem;
 
-    --font-size-small: 0.75rem;
+    --font-size-small: 0.9rem;
     --font-size-medium: 1.1rem;
     --font-size-large: 1.5rem;
     --font-size-extra-large: 2.25rem;

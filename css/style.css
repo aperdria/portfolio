@@ -18,6 +18,10 @@ body {
 
 /* Generic css */
 
+.no-wrap {
+    white-space: nowrap;
+}
+
 .center {
     text-align: center !important;
     align-items: center !important;
@@ -75,6 +79,10 @@ li {
 
 .mt-4 {
     margin-top: 32px !important;
+}
+
+.mt-8 {
+    margin-top: 64px !important;
 }
 
 .mb-1 {
@@ -146,7 +154,8 @@ h2 {
 h3 {
     font-family: 'PT Mono', serif;
     font-size: var(--font-size-medium);
-    padding-top: 24px;
+    padding-top: var(--margin-default-y);
+    padding-bottom: var(--margin-default-y);
 }
 
 p {
@@ -169,7 +178,6 @@ a:visited {
 }
 
 #testimonials .quote {
-    font-style: italic;
     background-image: url(../img/home/quotes.svg);
     background-size: 20%;
     background-repeat: no-repeat;
@@ -287,11 +295,11 @@ a.cta-button {
     font-size: var(--font-size-default);
 
     border: none;
-    border-radius: 20px;
+    border-radius: 5px;
     box-shadow: var(--box-shadow-button);
 
     padding: var(--margin-small-y) var(--margin-default-x) var(--margin-small-y) var(--margin-default-x);
-    margin-top: var(--margin-large-y);
+    margin-top: var(--margin-medium-y);
     max-width: 250px;
 }
 
@@ -450,6 +458,7 @@ a.cta-button {
 
 #menu-desktop li .menu-item {
     font-family: 'PT Mono', serif;
+    font-size: var(--font-size-medium);
     text-decoration: none;
     color: var(--black);
 }
@@ -621,6 +630,7 @@ a.cta-button {
     justify-content: center;
     width: 100%;
     min-height: 100vh;
+    padding-top: var(--margin-large-y);
 }
 
 .content-title {
@@ -647,5 +657,5 @@ a.to-the-top {
 }
 
 a.to-the-top:hover {
-    color: var(--tertiary-color);
+    color: var(--primary-color);
 }
