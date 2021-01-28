@@ -129,6 +129,10 @@ li {
     padding-bottom: 32px !important;
 }
 
+.pb-8 {
+    padding-bottom: 64px !important;
+}
+
 main {
     display: flex;
     margin-left: var(--margin-large-x);
