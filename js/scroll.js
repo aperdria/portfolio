@@ -12,6 +12,7 @@ for (let item of list) {
 /* Listen to scroll event */
 document.addEventListener('scroll', function () {
     var currentPosition = document.documentElement.scrollTop;
+    console.log("current", currentPosition);
 
     for (var i = 0; i < list.length; i++) {
         var key = list[i].getAttribute("href");
@@ -24,8 +25,12 @@ document.addEventListener('scroll', function () {
         var elementPositionY = coordinates[key].top + initialScrollTop;
         var nextElementPositionY = coordinates[keyNext].top + initialScrollTop;
 
+        console.log("key", key);
+        console.log("elementPositionY", elementPositionY);
+        console.log("nextElementPositionY", nextElementPositionY);
+
         if (currentPosition + 1 >= elementPositionY &&
-            (currentPosition < nextElementPositionY || key === keyNext)) {
+            (currentPosition < nextElementPositionY - 1 || key === keyNext)) {
             list[i].className = "menu-item active";
         } else {
             list[i].className = "menu-item";

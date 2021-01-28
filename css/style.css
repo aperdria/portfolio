@@ -161,8 +161,8 @@ h3 {
 p {
     font-family: 'Quicksand', sans-serif;
     font-size: var(--font-size-default);
-    line-height: var(--font-size-large);
-    padding-top: 8px;
+    line-height: 2rem;
+    padding-top: var(--margin-default-y);
     font-weight: 500;
 }
 
@@ -485,11 +485,11 @@ a.cta-button {
 }
 
 .icon-back a {
-    color: var(--light-grey);
+    color: var(--tertiary-color) !important;
 }
 
 .icon-back a:hover {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 /* SCROLL LINE */
@@ -593,10 +593,6 @@ a.cta-button {
     width: 80%;
 }
 
-#use-case .list {
-    margin-left: var(--margin-default-x);
-}
-
 #use-case .list li {
     line-height: 2rem;
     padding-top: 8px;
@@ -606,12 +602,13 @@ a.cta-button {
     color: var(--primary-color);
 }
 
-#use-case .problem-statement,
-#use-case .problem-statement p {
+#use-case .quote,
+#use-case .quote p {
     font-family: 'Quicksand', serif;
     font-size: var(--font-size-medium);
     line-height: var(--font-size-extra-large);
     font-style: italic;
+    color: var(--secondary-color);
     padding-top: var(--margin-default-y);
 }
 

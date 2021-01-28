@@ -1,326 +1,318 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="og:title" property="og:title"
-            content="Amelie Perdriaud - UX Designer & Developer">
-        <meta name="description"
-            content="Portfolio of Amelie Perdriaud, a UX Designer and Full-stack developer based in Amsterdam">
-        <title>Amélie Perdriaud - UX Designer & Developer Portfolio</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:title" property="og:title" content="Amelie Perdriaud - UX Designer & Developer">
+    <meta name="description"
+        content="Portfolio of Amelie Perdriaud, a UX Designer and Full-stack developer based in Amsterdam">
+    <title>Amélie Perdriaud - UX Designer & Developer Portfolio</title>
 
-        <link rel="stylesheet" type="text/css" href="./css/default-variables.css" />
-        <link rel="stylesheet" type="text/css" href="./css/mobile-variables.css" />
-        <link rel="stylesheet" type="text/css" href="./css/konnect.css" />
-        <link rel="stylesheet" type="text/css" href="./css/tablet.css" />
-        <link rel="stylesheet" type="text/css" href="./css/style.css" />
-        <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
-        <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/default-variables.css" />
+    <link rel="stylesheet" type="text/css" href="./css/mobile-variables.css" />
+    <link rel="stylesheet" type="text/css" href="./css/konnect.css" />
+    <link rel="stylesheet" type="text/css" href="./css/tablet.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
 
-        <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16">
-        <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="./img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./img/favicon-96x96.png" sizes="96x96">
 
-        <script src="https://kit.fontawesome.com/15d8602e1a.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-        <script type="text/javascript" src="js/anime.min.js"></script>
+    <script src="https://kit.fontawesome.com/15d8602e1a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/anime.min.js"></script>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQN0PXNSGC"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQN0PXNSGC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'G-CQN0PXNSGC');
-        </script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-CQN0PXNSGC');
+    </script>
 
-        <!-- Hotjar Tracking Code for amelieperdriaud.io -->
-        <script>
-            (function (h, o, t, j, a, r) {
-                h.hj = h.hj || function () {
-                    (h.hj.q = h.hj.q || []).push(arguments)
-                };
-                h._hjSettings = {
-                    hjid: 1865955,
-                    hjsv: 6
-                };
-                a = o.getElementsByTagName('head')[0];
-                r = o.createElement('script');
-                r.async = 1;
-                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-                a.appendChild(r);
-            })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-        </script>
-    </head>
+    <!-- Hotjar Tracking Code for amelieperdriaud.io -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 1865955,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+</head>
 
-    <body>
-        <div class="overlay open"></div>
-        <div class="scroll-line-vertical"></div>
-        <main>
-            <div class="icon-back" id="top">
-                <a href="./index.html"><i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i></a>
-            </div>
-            <div id="use-case">
-                <div class="col-2">
-                    <div class="blobs">
-                        <svg id="blob1">
-                            <path
-                                d="M355.259 0.582402C416.969 -5.62912 469.741 39.1431 521.687 73.03C576.577 108.838 635.851 142.566 663.788 201.85C693.808 265.553 707.198 342.731 679.241 407.365C652.062 470.202 583.236 501.333 521.474 530.873C469.329 555.813 412.48 554.138 355.259 562.32C285.617 572.277 215.032 611.947 150.508 583.913C81.7876 554.055 33.9932 485.242 12.589 413.438C-8.53854 342.562 -4.48164 260.41 35.535 198.213C72.4179 140.887 153.532 140.092 211.515 104.251C263.027 72.4102 295.006 6.64729 355.259 0.582402Z" />
-                        </svg>
-                        <svg id="blob2">
-                            <path
-                                d="M323.588 19.3705C375.197 25.2498 428.186 20.7357 473.105 46.8208C521.279 74.797 564.976 115.617 581.131 168.932C597.146 221.784 566.167 274.27 558.601 328.974C548.772 400.045 583.196 488.632 530.224 537.024C478.068 584.671 393.161 555.918 323.588 543.669C264.731 533.307 213.861 505.184 163.819 472.516C110.909 437.977 52.6795 406.568 25.8988 349.338C-2.73954 288.139 -8.89108 215.601 13.8152 151.962C36.2003 89.2227 85.8478 35.8934 147.087 9.68117C202.614 -14.0862 263.576 12.534 323.588 19.3705Z" />
-                        </svg>
-                    </div>
-                    <div class="col">
-                        <h1 class="ml16">Konnect</h1>
-                        <p class="headline">
-                            <b>&nbsp;Have you ever moved to a new place? How easy was it for you to
-                                meet people and make friends? Challenging right?</b>
-                        </p>
-                        <p class="headline">Friendship needs time to grow. But as we grow up, it is
-                            more and more difficult to find the time and energy to develop close
-                            friendships. Taking care of our family, managing our career goals,
-                            spending time with our partner... We have busy lifes.
-                        </p>
-                        <p class="headline">I've been living in Amsterdam for 2 years now (and
-                            loving it so far!), but developing close friendships here is challenging
-                            for me
-                            (COVID doesn't help). So I decided to deep dive into this assumption and
-                            see if
-                            other people felt the same.
-                        </p>
-                    </div>
-                    <div class="col">
-                        <img alt="Screenshot of the application Konnect designed by Amelie Perdriaud"
-                            src="./img/konnect/konnect_mockup-perspective.png" />
-                    </div>
+<body>
+    <div class="overlay open"></div>
+    <div class="scroll-line-vertical"></div>
+    <main>
+        <div class="icon-back" id="top">
+            <a href="./index.html"><i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i></a>
+        </div>
+        <div id="use-case">
+            <div class="col-2">
+                <div class="blobs">
+                    <svg id="blob1">
+                        <path
+                            d="M355.259 0.582402C416.969 -5.62912 469.741 39.1431 521.687 73.03C576.577 108.838 635.851 142.566 663.788 201.85C693.808 265.553 707.198 342.731 679.241 407.365C652.062 470.202 583.236 501.333 521.474 530.873C469.329 555.813 412.48 554.138 355.259 562.32C285.617 572.277 215.032 611.947 150.508 583.913C81.7876 554.055 33.9932 485.242 12.589 413.438C-8.53854 342.562 -4.48164 260.41 35.535 198.213C72.4179 140.887 153.532 140.092 211.515 104.251C263.027 72.4102 295.006 6.64729 355.259 0.582402Z" />
+                    </svg>
+                    <svg id="blob2">
+                        <path
+                            d="M323.588 19.3705C375.197 25.2498 428.186 20.7357 473.105 46.8208C521.279 74.797 564.976 115.617 581.131 168.932C597.146 221.784 566.167 274.27 558.601 328.974C548.772 400.045 583.196 488.632 530.224 537.024C478.068 584.671 393.161 555.918 323.588 543.669C264.731 533.307 213.861 505.184 163.819 472.516C110.909 437.977 52.6795 406.568 25.8988 349.338C-2.73954 288.139 -8.89108 215.601 13.8152 151.962C36.2003 89.2227 85.8478 35.8934 147.087 9.68117C202.614 -14.0862 263.576 12.534 323.588 19.3705Z" />
+                    </svg>
                 </div>
-                <div class="col-2">
-                    <div class="col">
-                        <img alt="Screenshot of the application Konnect designed by Amelie Perdriaud"
-                            src="./img/konnect/konnect_mockup_event.png" />
-                    </div>
-                    <div class="col">
-                        <h2>Project setup</h2>
-                        <ul class="list">
-                            <li><span class="key">Team</span> <span class="value">&nbsp;Me, myself
-                                    and
-                                    I</span></li>
-                            <li><span class="key">Timeline</span> <span class="value">&nbsp;Evenings
-                                    and
-                                    weekends during 4 weeks</span></li>
-                            <li><span class="key">Context</span> <span class="value">&nbsp;Final
-                                    project
-                                    at Ironhack UX/UI Design Bootcamp</span></li>
-                            <li><span class="key">Process</span> <span class="value">&nbsp;Design
-                                    thinking, from user
-                                    research to high-fi prototype</span></li>
-                            <li><span class="key">Tools</span> <span class="value">&nbsp;Figma,
-                                    Whimsical, Maze</span></li>
-                            <li><span class="key">Achievement</span> <span class="value">
-                                    <span class="highlight">&nbsp;Won the second prize of the best project
-                                        of the bootcamp</span>&nbsp;(among 17 projects)</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-1 content-title left">
-                    <h2>User research: 10 things I learned about friendship</h2>
-                    <p>I made 2 surveys, conducted 4 users interviews, gathered qualitative
-                        data
-                        from 15 people in an open questions form, and spend hours scrolling
-                        through the internet. See below what I've learned. Curious to see
-                        more?&nbsp;<a href="./files/konnect/konnect_affinity_diagram.pdf">Check my
-                            affinity
-                            diagram</a>.</p>
-                </div>
-                <div class="col-1 center">
-                    <div class="col">
-                        <img alt="Overview of User Research"
-                            src="./img/konnect/konnect_research_overview.png" />
-                    </div>
-                </div>
-                <div class="col-1 center">
-                    <div class="col">
-                        <img alt="User Persona for the application Konnect designed by Amelie Perdriaud"
-                            src="./img/konnect/konnect_user-persona.png" />
-                    </div>
-                </div>
-                <div class="col-1">
-                    <div class="col">
-                        <h2>Problem statement</h2>
-                        <div class="problem-statement">
-                            <p>Adults who moved to a new place less than 5 years ago</p>
-                            <p>
-                                Need to meet people who share their values and interests and are
-                                willing
-                                to develop a friendship
-                            </p>
-                            <p>
-                                So that they have people with whom to talk to and share memories
-                                in
-                                their current area</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="col">
-                        <img alt="Crazy 8 brainstorming images for the application Konnect designed by Amelie Perdriaud"
-                            src="./img/konnect/konnect_crazy-8.png" />
-                    </div>
-                    <div class="col">
-                        <h2>Ideate</h2>
-                        <p>My classmates helped me to generate ideas with a <b>&nbsp;Crazy 8
-                                workshop</b>.</p>
-                        <p>I continue to brainstorm by generating some <b>&nbsp;how might we
-                                statement</b>, and some <b>&nbsp;worst ideas</b>.</p>
-                        <p>It helped me to define what will be my concept:</p>
-                        <div class="quote mt-4 mb-4">
-                            Konnect is an application where you can organize activities, and
-                            find people who are willing to join you.
-                            You choose the activity, the date, the time, and the number of
-                            participants (maximum 6).
-                        </div>
-                        <p>This concept was tested with success on users thanks to a survey.
-                            83,1% of the participants said they would use this application.</p>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="col">
-                        <h2>Design positivity</h2>
-                        <p>
-                            According to my concept testing survey, <b>&nbsp;50% of the users
-                                wanted to be able to select the participants who will join
-                                an activity they organized</b>.
-                        </p>
-                        <p class="quote">But I also learned during the research phase that some of
-                            Tinder's users
-                            felt ever more lonely after using it than before.</p>
-                        <p>
-                            By providing the option to people to accept or rejects participants,
-                            I would gave them the opportunity to select
-                            exactly the people they want to meet. At the same time, I'll will
-                            contribute to a negative feeling of rejection, that already exists on
-                            existing social application.
-                        </p>
-                        <p>
-                            <b>&nbsp;Based on this observation I decided to remove the
-                                approval/rejection
-                                of participants from
-                                my list of features.</b>
-                        </p>
-                    </div>
-                    <div class="col">
-                        <img alt="Paper prototype for the application Konnect designed by Amelie Perdriaud"
-                            src="./img/konnect/konnect_paper-prototype.png" />
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="col">
-                        <img alt="Concept test survey result for the application Konnect designed by Amelie Perdriaud"
-                            src="./img/konnect/konnect_concept-test-survey.png" />
-                    </div>
-                    <div class="col">
-                        <h2>Design against systemic racism</h2>
-                        <p>
-                            The second challenge I had to face came up after a discussion I had
-                            with an interviewee.
-                        </p>
-                        <p>
-                            He was explaining to me that he felt discriminated in the past on
-                            some social networks because of his skin color: he was not able to
-                            find drivers on a famous French carpooling application. After
-                            switching his
-                            profile picture to a white man, he was able to find drivers way
-                            easily. And it triggered my reflexion even further.
-                        </p>
-                        <p class="quote mt-2 mb-2">
-                            You don't make friends with
-                            people because of their skin color, or because of their profile picture.
-                            You make friends with people because they share values or interests
-                            with you.
-                        </p>
-                        <p>This assumption was validated by my survey results, so I decided to
-                            <b>&nbsp;remove any information that could trigger systemic
-                                discrimination</b>: name, profile picture, nationality, occupation
-                            etc.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="col">
-                        <h2>Test, test and retest</h2>
-                        <p>Of course I started with a paper prototype that I've tested on 2
-                            people.</p>
-                        <p>Then I jumped into a mid-fi prototype that I tested in Maze.</b>.
-                        </p>
-                        <p class="quote mt-2 mb-2">66 people tested the Mid-fi prototype</p>
-                        <p>
-                            It helped me to identify the critical elements to display on the
-                            screen, and to make a list of what was missing.
-                        </p>
-                        <p>
-                            For example, since there is no profile picture, I had to add a way for
-                            people to recognize each other (eg: I will wear a red scarf).
-                        </p>
-                        <p>
-                            Test report is available&nbsp;<a
-                                href="https://app.maze.design/report/1kr7m8kinc7bfl#intro"
-                                target="_blank">here.</a>
-                        </p>
-                    </div>
-                    <div class="col">
-                        <img alt="Maze result for the usability test of the mid fi prototype of the application Konnect designed by Amelie Perdriaud"
-                            src="./img/konnect/konnect_maze_results.png" />
-                    </div>
-                </div>
-                <div class="col-1">
-                    <div class="col center">
-                        <img alt="Moodboard for the application Konnect designed by Amelie Perdriaud"
-                            src="./img/konnect/konnect_moodboard.png" />
-                    </div>
-                </div>
-                <div class="col-1 center">
-                    <h2>Excited to see the final result? Try it out!</h2>
-                    <div class="center mt-4">
-                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%"
-                            height="800"
-                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FN9CqaWlCdfCfhZexloTJ4o%2FFinal-project-Am%25C3%25A9lie-Final-version%3Fnode-id%3D838%253A4432%26viewport%3D179%252C77%252C0.03855526074767113%26scaling%3Dscale-down"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-1 center">
-                    <p>Do you want to have a closer look at my process?</p>
-                    <h2 class="pt-2"><a
-                            href="https://www.figma.com/file/N9CqaWlCdfCfhZexloTJ4o/Final-project-Am%C3%A9lie-Final-version?node-id=51%3A2"
-                            target="_blank">Click here to check my Figma file</a></h2>
-                    <p>Known in my team as the Queen of layers renaiming, I’m
-                        curious to hear if you found any tricks or you have any tips for me!
+                <div class="col">
+                    <h1 class="ml16">Konnect</h1>
+                    <p class="headline">
+                        <b>&nbsp;Have you ever moved to a new place? How easy was it for you to
+                            meet people and make friends? Challenging right?</b>
+                    </p>
+                    <p class="headline">Friendship needs time to grow. But as we grow up, it is
+                        more and more difficult to find the time and energy to develop close
+                        friendships. Taking care of our family, managing our career goals,
+                        spending time with our partner... We have busy lifes.
+                    </p>
+                    <p class="headline">I've been living in Amsterdam for 2 years now (and
+                        loving it so far!), but developing close friendships here is challenging
+                        for me
+                        (COVID doesn't help). So I decided to deep dive into this assumption and
+                        see if
+                        other people felt the same.
                     </p>
                 </div>
-                <div class="col-1 center pt-8">
-                    <a href="#top" class="to-the-top"><i class="fa fa-angle-double-up fa-5x"
-                            aria-hidden="true"></i></a>
+                <div class="col">
+                    <img alt="Screenshot of the application Konnect designed by Amelie Perdriaud"
+                        src="./img/konnect/konnect_mockup-perspective.png" />
                 </div>
             </div>
-        </main>
-        <script src="js/animate-letters.js"></script>
-        <script src="js/anime.min.js"></script>
-        <script src="js/scrollMonitor.js"></script>
-        <script src="js/scroll.js"></script>
-        <script src="js/blobs.js"></script>
-        <script src="js/overlay.js"></script>
-        <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
-        <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
-        <script>
-            window.onload = openingOverlay();
-        </script>
+            <div class="col-2">
+                <div class="col">
+                    <img alt="Screenshot of the application Konnect designed by Amelie Perdriaud"
+                        src="./img/konnect/konnect_mockup_event.png" />
+                </div>
+                <div class="col">
+                    <h2>Project setup</h2>
+                    <ul class="list">
+                        <li><span class="key">Team</span> <span class="value">&nbsp;Me, myself
+                                and
+                                I</span></li>
+                        <li><span class="key">Timeline</span> <span class="value">&nbsp;Evenings
+                                and
+                                weekends during 4 weeks</span></li>
+                        <li><span class="key">Context</span> <span class="value">&nbsp;Final
+                                project
+                                at Ironhack UX/UI Design Bootcamp</span></li>
+                        <li><span class="key">Process</span> <span class="value">&nbsp;Design
+                                thinking, from user
+                                research to high-fi prototype</span></li>
+                        <li><span class="key">Tools</span> <span class="value">&nbsp;Figma,
+                                Whimsical, Maze</span></li>
+                        <li><span class="key">Achievement</span> <span class="value">
+                                <span class="highlight">&nbsp;Won the second prize of the best project
+                                    of the bootcamp</span>&nbsp;(among 17 projects)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1 content-title left">
+                <h2>User research: what is friendship?</h2>
+                <p>The research phase consisted of:</p>
+                <ul>
+                    <li>Some secondary research</li>
+                    <li>2 surveys (15 and 115 respondents)</li>
+                    <li>4 users interviews</li>
+                    <li>1 survey consisting of open-ended questions (15 respondents)</li>
+                    <li>A bit of competitive analysis</li>
+                </ul>
+                <p class="pt-4">Curious to see
+                    more?&nbsp;<a href="./files/konnect/konnect_affinity_diagram.pdf">Check the complete affinity
+                        diagram.</a></p>
+            </div>
+            <div class="col-1 center">
+                <div class="col">
+                    <img alt="Overview of User Research" src="./img/konnect/konnect_research_overview.png" />
+                </div>
+            </div>
+            <div class="col-1">
+                <h2>User persona: meet Emily</h2>
+                <div class="col center">
+                    <img alt="User Persona for the application Konnect designed by Amelie Perdriaud"
+                        src="./img/konnect/konnect_user-persona.png" />
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="col">
+                    <h2>Problem statement</h2>
+                    <div class="quote">
+                        <p>Adults who moved to a new place less than 5 years ago<br>
+                            Need to meet people who share their values and interests and are willing to develop a
+                            friendship<br>
+                            So that they have people with whom to talk to and share memories in their current area</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col">
+                    <img alt="Crazy 8 brainstorming images for the application Konnect designed by Amelie Perdriaud"
+                        src="./img/konnect/konnect_crazy-8.png" />
+                </div>
+                <div class="col">
+                    <h2>Ideation</h2>
+                    <p>My classmates helped me to generate ideas with a <b>&nbsp;Crazy 8
+                            workshop</b>.&nbsp;I continued to brainstorm by generating some <b>&nbsp;how might we
+                            statement</b>, and some <b>&nbsp;worst ideas</b>.&nbsp;It helped me to define what will be
+                        my concept:</p>
+                    <div class="quote">
+                        Konnect is an application where you can organize activities, and
+                        find people who are willing to join you.
+                        You choose the activity, the date, the time, and the number of
+                        participants (maximum 6).
+                    </div>
+                    <p>This concept was tested with success on users thanks to a survey.
+                        83,1% of the participants said they would use this application.</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col">
+                    <h2>Design positivity</h2>
+                    <p>
+                        According to my concept testing survey, <b>&nbsp;50% of the users
+                            wanted to be able to select the participants who will join
+                            an activity they organized</b>.
+                    </p>
+                    <p class="quote">But I also learned during the research phase that some of
+                        Tinder's users
+                        felt ever more lonely after using it than before.</p>
+                    <p>
+                        By providing the option to people to accept or rejects participants,
+                        I would gave them the opportunity to select
+                        exactly the people they want to meet. At the same time, I'll will
+                        contribute to a negative feeling of rejection, that already exists on
+                        existing social application.
+                    </p>
+                    <p>
+                        <b>Based on this observation I decided to remove the
+                            approval/rejection
+                            of participants from
+                            my list of features.</b>
+                    </p>
+                </div>
+                <div class="col">
+                    <img alt="Paper prototype for the application Konnect designed by Amelie Perdriaud"
+                        src="./img/konnect/konnect_paper-prototype.png" />
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col">
+                    <img alt="Concept test survey result for the application Konnect designed by Amelie Perdriaud"
+                        src="./img/konnect/konnect_concept-test-survey.png" />
+                </div>
+                <div class="col">
+                    <h2>Design against systemic racism</h2>
+                    <p>
+                        The second challenge I had to face came up after a discussion I had
+                        with an interviewee.
+                    </p>
+                    <p>
+                        He was explaining to me that he felt discriminated in the past on
+                        some social networks because of his skin color: he was not able to
+                        find drivers on a famous French carpooling application. After
+                        switching his
+                        profile picture to a white man, he was able to find drivers way
+                        easily. And it triggered my reflexion even further.
+                    </p>
+                    <p class="quote">
+                        You don't make friends with
+                        people because of their skin color, or because of their profile picture.
+                        You make friends with people because they share values or interests
+                        with you.
+                    </p>
+                    <p>This assumption was validated by my survey results, so I decided to
+                        <b>&nbsp;remove any information that could trigger systemic
+                            discrimination</b>: name, profile picture, nationality, occupation
+                        etc.
+                    </p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col">
+                    <h2>Test, test and retest</h2>
+                    <p>Of course I started with a paper prototype that I've tested on 2
+                        people. Then I jumped into a mid-fi prototype that I tested in Maze.
+                    </p>
+                    <p class="quote">66 people tested the Mid-fi prototype</p>
+                    <p>
+                        It helped me to identify the critical elements to display on the
+                        screen, and to make a list of what was missing.
+                    </p>
+                    <p>
+                        For example, since there is no profile picture, I had to add a way for
+                        people to recognize each other (eg: I will wear a red scarf).
+                    </p>
+                    <p>
+                        Test report is available&nbsp;<a href="https://app.maze.design/report/1kr7m8kinc7bfl#intro"
+                            target="_blank">here.</a>
+                    </p>
+                </div>
+                <div class="col">
+                    <img alt="Maze result for the usability test of the mid fi prototype of the application Konnect designed by Amelie Perdriaud"
+                        src="./img/konnect/konnect_maze_results.png" />
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="col center">
+                    <img alt="Moodboard for the application Konnect designed by Amelie Perdriaud"
+                        src="./img/konnect/konnect_moodboard.png" />
+                </div>
+            </div>
+            <div class="col-1 center">
+                <h2>Excited to see the final result? Try it out!</h2>
+                <div class="center mt-4">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800"
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FN9CqaWlCdfCfhZexloTJ4o%2FFinal-project-Am%25C3%25A9lie-Final-version%3Fnode-id%3D838%253A4432%26viewport%3D179%252C77%252C0.03855526074767113%26scaling%3Dscale-down"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-1 center">
+                <p>Do you want to have a closer look at my process?</p>
+                <h2 class="pt-2"><a
+                        href="https://www.figma.com/file/N9CqaWlCdfCfhZexloTJ4o/Final-project-Am%C3%A9lie-Final-version?node-id=51%3A2"
+                        target="_blank">Click here to check my Figma file</a></h2>
+                <p>Known in my team as the Queen of layers renaiming, I’m
+                    curious to hear if you found any tricks or you have any tips for me!
+                </p>
+            </div>
+            <div class="col-1 center pt-8">
+                <a href="#top" class="to-the-top"><i class="fa fa-angle-double-up fa-5x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </main>
+    <script src="js/animate-letters.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/scrollMonitor.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/blobs.js"></script>
+    <script src="js/overlay.js"></script>
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+    <script>
+        window.onload = openingOverlay();
+    </script>
 
-    </body>
+</body>
 
 </html>

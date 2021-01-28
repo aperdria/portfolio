@@ -10,7 +10,6 @@
 #use-case-intro {
     background-image: url("../img/helief/helief_background.png");
     background-size: cover;
-    border-radius: 0 0 150px 150px;
     box-shadow: 0px 10px 20px 20px rgba(0, 0, 0, 0.25);
 
     margin-left: calc(-1 * var(--margin-large-x));
