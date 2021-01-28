@@ -183,4 +183,8 @@
     .blobs {
         width: 100%;
     }
+
+    #projects img {
+        padding-top: var(--margin-large-y);
+    }
 }
